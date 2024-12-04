@@ -31,26 +31,7 @@ namespace MagnoliaEventos
 
         private async void btnSesión_Click(object sender, EventArgs e)
         {
-            // Poner logica para extraer la info necesaria de los otros campos
-
-            // Crear su objeto de request usando la info que sacaron de los otros campos
-            var idEvento = 137;
-            var putEventosRequest = new PutEventosRequest()
-            {
-                Tipo_Evento = TipoDeEvento.Matrimonio,
-                Fecha_Evento = "2021-09-01",
-                Hora_Evento = "15:00:00",
-                Número_Personas = 100,
-                ID_Usuario = 201,
-                ID_Locacion = 220,
-            };
             
-            // Llamar a la API
-            HttpResponseMessage response = await _httpClient.PutAsJsonAsync($"Eventos/{idEvento}", putEventosRequest);
-            
-            // Procesar response
-            Console.WriteLine("Respuesta de APIpi:");
-            Console.WriteLine(response.StatusCode);
         }
         
         public enum TipoDeEvento
@@ -76,6 +57,30 @@ namespace MagnoliaEventos
             public int ID_Usuario { get; set; }
             
             public int ID_Locacion { get; set; }
+        }
+
+        private async void btnSesión_Click_1(object sender, EventArgs e)
+        {
+            // Poner logica para extraer la info necesaria de los otros campos
+
+            // Crear su objeto de request usando la info que sacaron de los otros campos
+            var idEvento = 137;
+            var putEventosRequest = new PutEventosRequest()
+            {
+                Tipo_Evento = TipoDeEvento.Matrimonio,
+                Fecha_Evento = "2021-09-01",
+                Hora_Evento = "15:00:00",
+                Número_Personas = 100,
+                ID_Usuario = 201,
+                ID_Locacion = 220,
+            };
+
+            // Llamar a la API
+            HttpResponseMessage response = await _httpClient.PutAsJsonAsync($"Eventos/{idEvento}", putEventosRequest);
+
+            // Procesar response
+            Console.WriteLine("Respuesta de APIpi:");
+            Console.WriteLine(response.StatusCode);
         }
     }
 }
