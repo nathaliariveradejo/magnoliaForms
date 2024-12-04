@@ -75,6 +75,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.cbEventType = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtCantPersE)).BeginInit();
             this.panelBajoTechoE.SuspendLayout();
             this.panelAireLibreE.SuspendLayout();
@@ -658,6 +659,21 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "Al Aire Libre";
             // 
+            // cbEventType
+            // 
+            this.cbEventType.FormattingEnabled = true;
+            this.cbEventType.Items.AddRange(new object[] {
+            "Matrimonio",
+            "Cumpleaños",
+            "Reunión_Ejecutiva",
+            "Graduación",
+            "Festividad",
+            "Quinceaños"});
+            this.cbEventType.Location = new System.Drawing.Point(77, 410);
+            this.cbEventType.Name = "cbEventType";
+            this.cbEventType.Size = new System.Drawing.Size(305, 28);
+            this.cbEventType.TabIndex = 30;
+            // 
             // Editar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -665,6 +681,7 @@
             this.BackgroundImage = global::MagnoliaEventos.Properties.Resources._8;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1516, 901);
+            this.Controls.Add(this.cbEventType);
             this.Controls.Add(this.panelBajoTechoE);
             this.Controls.Add(this.txtDetallesE);
             this.Controls.Add(this.panelAireLibreE);
@@ -752,5 +769,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox cbEventType;
     }
 }

@@ -317,6 +317,13 @@
             // cbEventType
             // 
             this.cbEventType.FormattingEnabled = true;
+            this.cbEventType.Items.AddRange(new object[] {
+            "Matrimonio",
+            "Cumpleaños",
+            "Reunión_Ejecutiva",
+            "Graduación",
+            "Festividad",
+            "Quinceaños"});
             this.cbEventType.Location = new System.Drawing.Point(143, 537);
             this.cbEventType.Name = "cbEventType";
             this.cbEventType.Size = new System.Drawing.Size(395, 28);
