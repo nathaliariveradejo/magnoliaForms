@@ -39,22 +39,21 @@
             this.btnSesión.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSesión.ForeColor = System.Drawing.Color.Transparent;
             this.btnSesión.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSesión.Location = new System.Drawing.Point(830, 381);
-            this.btnSesión.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSesión.Location = new System.Drawing.Point(738, 305);
+            this.btnSesión.Margin = new System.Windows.Forms.Padding(4);
             this.btnSesión.Name = "btnSesión";
-            this.btnSesión.Size = new System.Drawing.Size(356, 135);
+            this.btnSesión.Size = new System.Drawing.Size(316, 108);
             this.btnSesión.TabIndex = 0;
             this.btnSesión.Text = "i";
             this.btnSesión.UseVisualStyleBackColor = true;
-            this.btnSesión.Click += new System.EventHandler(this.btnSesión_Click_1);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1516, 901);
+            this.ClientSize = new System.Drawing.Size(1348, 721);
             this.Controls.Add(this.btnSesión);
             this.ForeColor = System.Drawing.Color.Sienna;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
