@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LandingPage));
             this.btnReportesI = new System.Windows.Forms.Button();
             this.btnVerI = new System.Windows.Forms.Button();
             this.btnEditarI = new System.Windows.Forms.Button();
@@ -41,12 +40,11 @@
             this.btnReportesI.BackColor = System.Drawing.Color.Transparent;
             this.btnReportesI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportesI.ForeColor = System.Drawing.Color.Transparent;
-            this.btnReportesI.Location = new System.Drawing.Point(1176, 36);
-            this.btnReportesI.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReportesI.Location = new System.Drawing.Point(1309, 45);
+            this.btnReportesI.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReportesI.Name = "btnReportesI";
-            this.btnReportesI.Size = new System.Drawing.Size(119, 28);
+            this.btnReportesI.Size = new System.Drawing.Size(148, 35);
             this.btnReportesI.TabIndex = 30;
-            this.btnReportesI.Text = "i";
             this.btnReportesI.UseVisualStyleBackColor = false;
             // 
             // btnVerI
@@ -54,12 +52,11 @@
             this.btnVerI.BackColor = System.Drawing.Color.Transparent;
             this.btnVerI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerI.ForeColor = System.Drawing.Color.Transparent;
-            this.btnVerI.Location = new System.Drawing.Point(1085, 36);
-            this.btnVerI.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVerI.Location = new System.Drawing.Point(1221, 45);
+            this.btnVerI.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnVerI.Name = "btnVerI";
-            this.btnVerI.Size = new System.Drawing.Size(71, 28);
+            this.btnVerI.Size = new System.Drawing.Size(80, 35);
             this.btnVerI.TabIndex = 29;
-            this.btnVerI.Text = "i";
             this.btnVerI.UseVisualStyleBackColor = false;
             // 
             // btnEditarI
@@ -67,12 +64,11 @@
             this.btnEditarI.BackColor = System.Drawing.Color.Transparent;
             this.btnEditarI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditarI.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEditarI.Location = new System.Drawing.Point(977, 36);
-            this.btnEditarI.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditarI.Location = new System.Drawing.Point(1099, 45);
+            this.btnEditarI.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEditarI.Name = "btnEditarI";
-            this.btnEditarI.Size = new System.Drawing.Size(86, 28);
+            this.btnEditarI.Size = new System.Drawing.Size(97, 35);
             this.btnEditarI.TabIndex = 28;
-            this.btnEditarI.Text = "i";
             this.btnEditarI.UseVisualStyleBackColor = false;
             // 
             // btnCrearI
@@ -80,12 +76,11 @@
             this.btnCrearI.BackColor = System.Drawing.Color.Transparent;
             this.btnCrearI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearI.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCrearI.Location = new System.Drawing.Point(871, 36);
-            this.btnCrearI.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCrearI.Location = new System.Drawing.Point(980, 45);
+            this.btnCrearI.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCrearI.Name = "btnCrearI";
-            this.btnCrearI.Size = new System.Drawing.Size(82, 28);
+            this.btnCrearI.Size = new System.Drawing.Size(92, 35);
             this.btnCrearI.TabIndex = 27;
-            this.btnCrearI.Text = "i";
             this.btnCrearI.UseVisualStyleBackColor = false;
             // 
             // btnInicioI
@@ -94,26 +89,26 @@
             this.btnInicioI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnInicioI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicioI.ForeColor = System.Drawing.Color.Transparent;
-            this.btnInicioI.Location = new System.Drawing.Point(763, 36);
-            this.btnInicioI.Margin = new System.Windows.Forms.Padding(4);
+            this.btnInicioI.Location = new System.Drawing.Point(858, 45);
+            this.btnInicioI.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInicioI.Name = "btnInicioI";
-            this.btnInicioI.Size = new System.Drawing.Size(76, 28);
+            this.btnInicioI.Size = new System.Drawing.Size(86, 35);
             this.btnInicioI.TabIndex = 26;
-            this.btnInicioI.Text = "i";
             this.btnInicioI.UseVisualStyleBackColor = false;
             // 
             // LandingPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources._3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1348, 721);
+            this.ClientSize = new System.Drawing.Size(1516, 901);
             this.Controls.Add(this.btnReportesI);
             this.Controls.Add(this.btnVerI);
             this.Controls.Add(this.btnEditarI);
             this.Controls.Add(this.btnCrearI);
             this.Controls.Add(this.btnInicioI);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "LandingPage";
             this.Text = "LandingPage";
             this.ResumeLayout(false);

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.btnNextSesión = new System.Windows.Forms.Button();
@@ -39,10 +38,10 @@
             this.txtCorreo.BackColor = System.Drawing.Color.FloralWhite;
             this.txtCorreo.Font = new System.Drawing.Font("Perpetua Titling MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.txtCorreo.Location = new System.Drawing.Point(692, 259);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCorreo.Location = new System.Drawing.Point(778, 324);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(404, 36);
+            this.txtCorreo.Size = new System.Drawing.Size(454, 41);
             this.txtCorreo.TabIndex = 0;
             // 
             // txtContraseña
@@ -50,11 +49,11 @@
             this.txtContraseña.BackColor = System.Drawing.Color.FloralWhite;
             this.txtContraseña.Font = new System.Drawing.Font("Perpetua Titling MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.txtContraseña.Location = new System.Drawing.Point(692, 385);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContraseña.Location = new System.Drawing.Point(778, 481);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '-';
-            this.txtContraseña.Size = new System.Drawing.Size(404, 39);
+            this.txtContraseña.Size = new System.Drawing.Size(454, 45);
             this.txtContraseña.TabIndex = 1;
             this.txtContraseña.Visible = false;
             // 
@@ -64,25 +63,24 @@
             this.btnNextSesión.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNextSesión.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNextSesión.ForeColor = System.Drawing.Color.Transparent;
-            this.btnNextSesión.Location = new System.Drawing.Point(790, 497);
-            this.btnNextSesión.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNextSesión.Location = new System.Drawing.Point(889, 621);
+            this.btnNextSesión.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNextSesión.Name = "btnNextSesión";
-            this.btnNextSesión.Size = new System.Drawing.Size(214, 73);
+            this.btnNextSesión.Size = new System.Drawing.Size(241, 91);
             this.btnNextSesión.TabIndex = 2;
-            this.btnNextSesión.Text = "i";
             this.btnNextSesión.UseVisualStyleBackColor = false;
             // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources._2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1348, 721);
+            this.ClientSize = new System.Drawing.Size(1516, 901);
             this.Controls.Add(this.btnNextSesión);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtCorreo);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Inicio";
             this.Text = "Inicio";
             this.ResumeLayout(false);
