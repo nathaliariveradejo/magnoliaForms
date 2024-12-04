@@ -228,25 +228,25 @@
     <None Include="Resources\Crear Evento.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\8.jpg" />
+    <None Include="Resources\Editar Evento.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Factura.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\2.png" />
+    <None Include="Resources\Log in.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\3.png" />
+    <None Include="Resources\Bienvenido.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\6.png" />
+    <None Include="Resources\Locaciones.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1.png" />
+    <None Include="Resources\Inicio.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\4.png" />
+    <None Include="Resources\Reportes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
