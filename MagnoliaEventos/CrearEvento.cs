@@ -14,7 +14,8 @@ namespace MagnoliaEventos
         private List<string> opcionS;
         private int cantS;
         private string tipoS;
-        private string metodoPagoS; 
+        private string metodoPagoS;
+        private string detalleS;
 
         public CrearEvento()
         {
@@ -81,11 +82,34 @@ namespace MagnoliaEventos
 
         private void btnEliminarE_Click(object sender, EventArgs e)
         {
+            ReportePE form9 = new ReportePE();
+            form9.Show();
+            this.Close();
         }
 
         private void btnSigCE1_Click(object sender, EventArgs e)
         {
+            var eventoInfo = new EventoInfo
+            {
+                TipoEvento = cbEventType.SelectedItem?.ToString(),
+                FechaEvento = dtpFechaCE.Value,
+                HoraEvento = dtpHoraCE.Value,
+                CantidadPersonas = (int)txtCantPersCE.Value,
+                CostoTotal = totalS,
+                Opciones = opcionS,
+                MetodoPago = cbPago.SelectedItem?.ToString(),
+                Detalles = detalleS.ToString()
+            };
 
+            // Abrir el formulario de locaciones y pasarle el objeto eventoInfo
+            Locaciones locacionesForm = new Locaciones(eventoInfo);
+            locacionesForm.Show();
+            this.Close();
+
+
+            Factura facturaForm = new Factura(eventoInfo);
+            facturaForm.Show();
+            this.Hide();
         }
 
         private void dtpFechaCE_ValueChanged(object sender, EventArgs e)
@@ -101,6 +125,30 @@ namespace MagnoliaEventos
         private void cbEventType_SelectedIndexChanged(object sender, EventArgs e)
         {
             cantS = (int)txtCantPersCE.Value;
+        }
+
+        private void btnInicioC_Click(object sender, EventArgs e)
+        {
+            LandingPage form8 = new LandingPage();
+            form8.Show();
+            this.Close();
+        }
+
+        private void btnCrearC_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnVerC_Click(object sender, EventArgs e)
+        {
+            Visualizar form6 = new Visualizar();
+            form6.Show();
+            this.Close();
+        }
+
+        private void txtDetallesCE_TextChanged(object sender, EventArgs e)
+        {
+            detalleS = txtDetallesCE.ToString(); 
         }
     }
 }

@@ -12,9 +12,30 @@ namespace MagnoliaEventos
 {
     public partial class Factura : Form
     {
-        public Factura()
+
+        private int cantP;
+        private double precioL, costoSA, total;
+        private string tipoE;
+       
+        public Factura(EventoInfo eventoInfo)
         {
             InitializeComponent();
+
+            tipoE = eventoInfo.TipoEvento;
+            lblFecha.Text = eventoInfo.FechaEvento.ToShortDateString();
+            lblHora.Text = eventoInfo.HoraEvento.ToShortTimeString();
+            cantP = eventoInfo.CantidadPersonas;
+            costoSA = eventoInfo.CostoTotal;
+            listBoxServicios.Items.AddRange(eventoInfo.Opciones.ToArray());
+            lblMétodoPago.Text = eventoInfo.MetodoPago;
+            lblDetalleReserva.Text = eventoInfo.Detalles;
+            lblLocacion.Text = eventoInfo.Locacion;
+            precioL= eventoInfo.PrecioLocacion;
+            lblEstado.Text = "En_Espera";
+
+            /*total = costoSA + precioL;
+             lblTotal.Text = total.ToString();
+             */
         }
     }
 }

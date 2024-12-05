@@ -231,6 +231,7 @@
             this.btnVerC.Size = new System.Drawing.Size(53, 23);
             this.btnVerC.TabIndex = 24;
             this.btnVerC.UseVisualStyleBackColor = false;
+            this.btnVerC.Click += new System.EventHandler(this.btnVerC_Click);
             // 
             // btnCrearC
             // 
@@ -242,6 +243,7 @@
             this.btnCrearC.Size = new System.Drawing.Size(61, 23);
             this.btnCrearC.TabIndex = 22;
             this.btnCrearC.UseVisualStyleBackColor = false;
+            this.btnCrearC.Click += new System.EventHandler(this.btnCrearC_Click);
             // 
             // btnInicioC
             // 
@@ -254,6 +256,7 @@
             this.btnInicioC.Size = new System.Drawing.Size(57, 23);
             this.btnInicioC.TabIndex = 21;
             this.btnInicioC.UseVisualStyleBackColor = false;
+            this.btnInicioC.Click += new System.EventHandler(this.btnInicioC_Click);
             // 
             // txtDetallesCE
             // 
@@ -263,6 +266,7 @@
             this.txtDetallesCE.Name = "txtDetallesCE";
             this.txtDetallesCE.Size = new System.Drawing.Size(359, 79);
             this.txtDetallesCE.TabIndex = 0;
+            this.txtDetallesCE.TextChanged += new System.EventHandler(this.txtDetallesCE_TextChanged);
             // 
             // btnSigCE1
             // 
