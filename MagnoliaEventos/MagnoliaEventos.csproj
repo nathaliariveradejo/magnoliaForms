@@ -227,7 +227,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Crear Evento.png" />
+    <None Include="Resources\Crear_Evento.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\8.jpg" />
@@ -251,22 +251,25 @@
     <None Include="Resources\4.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Crear Evento1.png" />
+    <None Include="Resources\Crear_Evento1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Editar evento.png" />
+    <None Include="Resources\Editar_evento.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Landing page.png" />
+    <None Include="Resources\Landing_page.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Crear Evento2.png" />
+    <None Include="Resources\Crear_Evento2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Locacion.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Reporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Visualizar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

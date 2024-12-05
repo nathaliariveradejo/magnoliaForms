@@ -36,24 +36,22 @@
             // txtCorreo
             // 
             this.txtCorreo.BackColor = System.Drawing.Color.FloralWhite;
-            this.txtCorreo.Font = new System.Drawing.Font("Perpetua Titling MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.txtCorreo.Location = new System.Drawing.Point(778, 324);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCorreo.Location = new System.Drawing.Point(519, 211);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(454, 41);
+            this.txtCorreo.Size = new System.Drawing.Size(304, 29);
             this.txtCorreo.TabIndex = 0;
             // 
             // txtContraseña
             // 
             this.txtContraseña.BackColor = System.Drawing.Color.FloralWhite;
-            this.txtContraseña.Font = new System.Drawing.Font("Perpetua Titling MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.txtContraseña.Location = new System.Drawing.Point(778, 481);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtContraseña.Location = new System.Drawing.Point(519, 313);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '-';
-            this.txtContraseña.Size = new System.Drawing.Size(454, 45);
+            this.txtContraseña.Size = new System.Drawing.Size(304, 31);
             this.txtContraseña.TabIndex = 1;
             this.txtContraseña.Visible = false;
             // 
@@ -63,30 +61,27 @@
             this.btnNextSesión.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNextSesión.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNextSesión.ForeColor = System.Drawing.Color.Transparent;
-            this.btnNextSesión.Location = new System.Drawing.Point(889, 621);
-            this.btnNextSesión.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnNextSesión.Location = new System.Drawing.Point(593, 404);
             this.btnNextSesión.Name = "btnNextSesión";
-            this.btnNextSesión.Size = new System.Drawing.Size(241, 91);
+            this.btnNextSesión.Size = new System.Drawing.Size(161, 59);
             this.btnNextSesión.TabIndex = 2;
             this.btnNextSesión.UseVisualStyleBackColor = false;
             this.btnNextSesión.Click += new System.EventHandler(this.btnNextSesión_Click);
             // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Log_in;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1516, 901);
+            this.ClientSize = new System.Drawing.Size(1011, 586);
             this.Controls.Add(this.btnNextSesión);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtCorreo);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Inicio";
             this.Text = "Inicio";
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

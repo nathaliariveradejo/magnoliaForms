@@ -41,7 +41,7 @@ namespace MagnoliaEventos
                 return;
             }
 
-            HttpResponseMessage response = await _httpClient.GetAsync();
+            // HttpResponseMessage response = await _httpClient.GetAsync();
 
             
 
