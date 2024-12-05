@@ -275,6 +275,7 @@
     <None Include="Resources\Reporte.png" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\PostBitacoraRequest.cs" />
     <Content Include="Resources\Visualizar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
