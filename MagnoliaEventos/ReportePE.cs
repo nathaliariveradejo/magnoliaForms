@@ -10,14 +10,21 @@ using System.Windows.Forms;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
+using System.Net.Http;
+using MagnoliaEventos.API;
 
 
 namespace MagnoliaEventos
 {
     public partial class ReportePE : Form
     {
+        private HttpClient _httpClient;
         public ReportePE()
         {
+            _httpClient = new HttpClient
+            {
+                BaseAddress = new Uri("https://localhost:7003/")
+            };
             InitializeComponent();
         }
 
@@ -80,6 +87,13 @@ namespace MagnoliaEventos
         private void btnProxEventosPE_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private async void btnBitacora_Click(object sender, EventArgs e)
+        {
+            var respuestaBitacoras = await _httpClient.GetAsync("Bitacora");
+            var respuestaJson = await respuestaBitacoras.Content.ReadAsStringAsync();
+            var bitacoras = System.Text.Json.JsonSerializer.Deserialize<List<Bitacora>>(respuestaJson);
         }
     }
 }

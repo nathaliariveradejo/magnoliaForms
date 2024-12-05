@@ -112,6 +112,7 @@
             this.btnBitacora.Size = new System.Drawing.Size(86, 33);
             this.btnBitacora.TabIndex = 6;
             this.btnBitacora.UseVisualStyleBackColor = false;
+            this.btnBitacora.Click += new System.EventHandler(this.btnBitacora_Click);
             // 
             // btnExportarPE
             // 

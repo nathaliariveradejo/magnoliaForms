@@ -87,6 +87,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\Bitacora.cs" />
     <Compile Include="API\Evento.cs" />
     <Compile Include="API\Locacion.cs" />
     <Compile Include="API\LogInRequest.cs" />
