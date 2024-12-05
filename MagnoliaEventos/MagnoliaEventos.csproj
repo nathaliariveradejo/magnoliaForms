@@ -94,6 +94,7 @@
     <Compile Include="Editar.Designer.cs">
       <DependentUpon>Editar.cs</DependentUpon>
     </Compile>
+    <Compile Include="EventoInfo.cs" />
     <Compile Include="Factura.cs">
       <SubType>Form</SubType>
     </Compile>
