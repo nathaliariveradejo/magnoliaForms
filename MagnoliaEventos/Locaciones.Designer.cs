@@ -482,7 +482,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.HotPink;
-            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources._6;
+            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Locaciones;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1516, 901);
             this.Controls.Add(this.panelBajoTechoCE);

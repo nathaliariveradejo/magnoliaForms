@@ -203,7 +203,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources._4;
+            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Reportes;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1516, 901);
             this.Controls.Add(this.btnReportesRPE);
