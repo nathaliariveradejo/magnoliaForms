@@ -30,7 +30,6 @@
         {
             this.btnReportesE = new System.Windows.Forms.Button();
             this.btnVerE = new System.Windows.Forms.Button();
-            this.btnEditarE = new System.Windows.Forms.Button();
             this.btnCrearE = new System.Windows.Forms.Button();
             this.btnInicioE = new System.Windows.Forms.Button();
             this.E = new System.Windows.Forms.CheckBox();
@@ -90,7 +89,6 @@
             this.btnReportesE.Name = "btnReportesE";
             this.btnReportesE.Size = new System.Drawing.Size(134, 35);
             this.btnReportesE.TabIndex = 30;
-            this.btnReportesE.Text = "i";
             this.btnReportesE.UseVisualStyleBackColor = false;
             // 
             // btnVerE
@@ -106,30 +104,16 @@
             this.btnVerE.Text = "i";
             this.btnVerE.UseVisualStyleBackColor = false;
             // 
-            // btnEditarE
-            // 
-            this.btnEditarE.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditarE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarE.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEditarE.Location = new System.Drawing.Point(1104, 44);
-            this.btnEditarE.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnEditarE.Name = "btnEditarE";
-            this.btnEditarE.Size = new System.Drawing.Size(97, 35);
-            this.btnEditarE.TabIndex = 28;
-            this.btnEditarE.Text = "i";
-            this.btnEditarE.UseVisualStyleBackColor = false;
-            // 
             // btnCrearE
             // 
             this.btnCrearE.BackColor = System.Drawing.Color.Transparent;
             this.btnCrearE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearE.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCrearE.Location = new System.Drawing.Point(984, 44);
+            this.btnCrearE.Location = new System.Drawing.Point(1109, 44);
             this.btnCrearE.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCrearE.Name = "btnCrearE";
-            this.btnCrearE.Size = new System.Drawing.Size(92, 35);
+            this.btnCrearE.Size = new System.Drawing.Size(108, 35);
             this.btnCrearE.TabIndex = 27;
-            this.btnCrearE.Text = "i";
             this.btnCrearE.UseVisualStyleBackColor = false;
             // 
             // btnInicioE
@@ -138,13 +122,13 @@
             this.btnInicioE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnInicioE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicioE.ForeColor = System.Drawing.Color.Transparent;
-            this.btnInicioE.Location = new System.Drawing.Point(863, 44);
+            this.btnInicioE.Location = new System.Drawing.Point(1015, 44);
             this.btnInicioE.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInicioE.Name = "btnInicioE";
             this.btnInicioE.Size = new System.Drawing.Size(86, 35);
             this.btnInicioE.TabIndex = 26;
-            this.btnInicioE.Text = "i";
             this.btnInicioE.UseVisualStyleBackColor = false;
+            this.btnInicioE.Click += new System.EventHandler(this.btnInicioE_Click);
             // 
             // E
             // 
@@ -665,7 +649,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Editar_Evento;
+            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Editar_evento;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1516, 901);
             this.Controls.Add(this.cbEventType);
@@ -690,7 +674,6 @@
             this.Controls.Add(this.chkFotoE);
             this.Controls.Add(this.btnReportesE);
             this.Controls.Add(this.btnVerE);
-            this.Controls.Add(this.btnEditarE);
             this.Controls.Add(this.btnCrearE);
             this.Controls.Add(this.btnInicioE);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -710,7 +693,6 @@
 
         private System.Windows.Forms.Button btnReportesE;
         private System.Windows.Forms.Button btnVerE;
-        private System.Windows.Forms.Button btnEditarE;
         private System.Windows.Forms.Button btnCrearE;
         private System.Windows.Forms.Button btnInicioE;
         private System.Windows.Forms.CheckBox E;

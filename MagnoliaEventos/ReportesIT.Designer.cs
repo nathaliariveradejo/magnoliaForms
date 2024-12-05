@@ -30,7 +30,6 @@
         {
             this.btnServAd = new System.Windows.Forms.Button();
             this.btnVerRIT = new System.Windows.Forms.Button();
-            this.btnEditarRIT = new System.Windows.Forms.Button();
             this.btnCrearRIT = new System.Windows.Forms.Button();
             this.btnInicioRIT = new System.Windows.Forms.Button();
             this.btnExportarIT = new System.Windows.Forms.Button();
@@ -51,7 +50,7 @@
             this.btnServAd.Location = new System.Drawing.Point(1314, 48);
             this.btnServAd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnServAd.Name = "btnServAd";
-            this.btnServAd.Size = new System.Drawing.Size(133, 35);
+            this.btnServAd.Size = new System.Drawing.Size(146, 35);
             this.btnServAd.TabIndex = 24;
             this.btnServAd.UseVisualStyleBackColor = false;
             this.btnServAd.Click += new System.EventHandler(this.btnReportesRIT_Click);
@@ -64,30 +63,17 @@
             this.btnVerRIT.Location = new System.Drawing.Point(1224, 48);
             this.btnVerRIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnVerRIT.Name = "btnVerRIT";
-            this.btnVerRIT.Size = new System.Drawing.Size(58, 35);
+            this.btnVerRIT.Size = new System.Drawing.Size(71, 35);
             this.btnVerRIT.TabIndex = 23;
             this.btnVerRIT.UseVisualStyleBackColor = false;
             this.btnVerRIT.Click += new System.EventHandler(this.btnVerRIT_Click);
-            // 
-            // btnEditarRIT
-            // 
-            this.btnEditarRIT.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditarRIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarRIT.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEditarRIT.Location = new System.Drawing.Point(1098, 48);
-            this.btnEditarRIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnEditarRIT.Name = "btnEditarRIT";
-            this.btnEditarRIT.Size = new System.Drawing.Size(92, 35);
-            this.btnEditarRIT.TabIndex = 22;
-            this.btnEditarRIT.UseVisualStyleBackColor = false;
-            this.btnEditarRIT.Click += new System.EventHandler(this.btnEditarRIT_Click);
             // 
             // btnCrearRIT
             // 
             this.btnCrearRIT.BackColor = System.Drawing.Color.Transparent;
             this.btnCrearRIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearRIT.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCrearRIT.Location = new System.Drawing.Point(978, 48);
+            this.btnCrearRIT.Location = new System.Drawing.Point(1112, 48);
             this.btnCrearRIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCrearRIT.Name = "btnCrearRIT";
             this.btnCrearRIT.Size = new System.Drawing.Size(80, 35);
@@ -100,7 +86,7 @@
             this.btnInicioRIT.BackColor = System.Drawing.Color.Transparent;
             this.btnInicioRIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicioRIT.ForeColor = System.Drawing.Color.Transparent;
-            this.btnInicioRIT.Location = new System.Drawing.Point(856, 48);
+            this.btnInicioRIT.Location = new System.Drawing.Point(1008, 48);
             this.btnInicioRIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInicioRIT.Name = "btnInicioRIT";
             this.btnInicioRIT.Size = new System.Drawing.Size(80, 35);
@@ -201,12 +187,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Reportes;
+            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Reporte;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1516, 901);
             this.Controls.Add(this.btnServAd);
             this.Controls.Add(this.btnVerRIT);
-            this.Controls.Add(this.btnEditarRIT);
             this.Controls.Add(this.btnCrearRIT);
             this.Controls.Add(this.btnInicioRIT);
             this.Controls.Add(this.btnExportarIT);
@@ -228,7 +213,6 @@
 
         private System.Windows.Forms.Button btnServAd;
         private System.Windows.Forms.Button btnVerRIT;
-        private System.Windows.Forms.Button btnEditarRIT;
         private System.Windows.Forms.Button btnCrearRIT;
         private System.Windows.Forms.Button btnInicioRIT;
         private System.Windows.Forms.Button btnExportarIT;

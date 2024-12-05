@@ -30,7 +30,6 @@
         {
             this.btnReportesRIM = new System.Windows.Forms.Button();
             this.btnVerRIM = new System.Windows.Forms.Button();
-            this.btnEditarRIM = new System.Windows.Forms.Button();
             this.btnCrearRIM = new System.Windows.Forms.Button();
             this.btnInicioRIM = new System.Windows.Forms.Button();
             this.btnExportarIM = new System.Windows.Forms.Button();
@@ -51,7 +50,7 @@
             this.btnReportesRIM.Location = new System.Drawing.Point(1320, 49);
             this.btnReportesRIM.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReportesRIM.Name = "btnReportesRIM";
-            this.btnReportesRIM.Size = new System.Drawing.Size(126, 35);
+            this.btnReportesRIM.Size = new System.Drawing.Size(139, 35);
             this.btnReportesRIM.TabIndex = 24;
             this.btnReportesRIM.UseVisualStyleBackColor = false;
             this.btnReportesRIM.Click += new System.EventHandler(this.btnReportesRIM_Click);
@@ -69,25 +68,12 @@
             this.btnVerRIM.UseVisualStyleBackColor = false;
             this.btnVerRIM.Click += new System.EventHandler(this.btnVerRIM_Click);
             // 
-            // btnEditarRIM
-            // 
-            this.btnEditarRIM.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditarRIM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarRIM.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEditarRIM.Location = new System.Drawing.Point(1097, 49);
-            this.btnEditarRIM.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnEditarRIM.Name = "btnEditarRIM";
-            this.btnEditarRIM.Size = new System.Drawing.Size(92, 35);
-            this.btnEditarRIM.TabIndex = 22;
-            this.btnEditarRIM.UseVisualStyleBackColor = false;
-            this.btnEditarRIM.Click += new System.EventHandler(this.btnEditarRIM_Click);
-            // 
             // btnCrearRIM
             // 
             this.btnCrearRIM.BackColor = System.Drawing.Color.Transparent;
             this.btnCrearRIM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearRIM.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCrearRIM.Location = new System.Drawing.Point(976, 49);
+            this.btnCrearRIM.Location = new System.Drawing.Point(1124, 49);
             this.btnCrearRIM.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCrearRIM.Name = "btnCrearRIM";
             this.btnCrearRIM.Size = new System.Drawing.Size(80, 35);
@@ -100,7 +86,7 @@
             this.btnInicioRIM.BackColor = System.Drawing.Color.Transparent;
             this.btnInicioRIM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicioRIM.ForeColor = System.Drawing.Color.Transparent;
-            this.btnInicioRIM.Location = new System.Drawing.Point(855, 49);
+            this.btnInicioRIM.Location = new System.Drawing.Point(1007, 49);
             this.btnInicioRIM.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInicioRIM.Name = "btnInicioRIM";
             this.btnInicioRIM.Size = new System.Drawing.Size(80, 35);
@@ -200,12 +186,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Reportes;
+            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Reporte;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1516, 901);
             this.Controls.Add(this.btnReportesRIM);
             this.Controls.Add(this.btnVerRIM);
-            this.Controls.Add(this.btnEditarRIM);
             this.Controls.Add(this.btnCrearRIM);
             this.Controls.Add(this.btnInicioRIM);
             this.Controls.Add(this.btnExportarIM);
@@ -226,7 +211,6 @@
 
         private System.Windows.Forms.Button btnReportesRIM;
         private System.Windows.Forms.Button btnVerRIM;
-        private System.Windows.Forms.Button btnEditarRIM;
         private System.Windows.Forms.Button btnCrearRIM;
         private System.Windows.Forms.Button btnInicioRIM;
         private System.Windows.Forms.Button btnExportarIM;

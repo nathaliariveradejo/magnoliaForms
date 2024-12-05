@@ -30,7 +30,6 @@
         {
             this.btnReportesC2 = new System.Windows.Forms.Button();
             this.btnVerC2 = new System.Windows.Forms.Button();
-            this.btnEditarC2 = new System.Windows.Forms.Button();
             this.btnCrearC2 = new System.Windows.Forms.Button();
             this.btnInicioC2 = new System.Windows.Forms.Button();
             this.rdbBajoTecho = new System.Windows.Forms.RadioButton();
@@ -88,24 +87,12 @@
             this.btnVerC2.TabIndex = 29;
             this.btnVerC2.UseVisualStyleBackColor = false;
             // 
-            // btnEditarC2
-            // 
-            this.btnEditarC2.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditarC2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarC2.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEditarC2.Location = new System.Drawing.Point(1101, 46);
-            this.btnEditarC2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnEditarC2.Name = "btnEditarC2";
-            this.btnEditarC2.Size = new System.Drawing.Size(97, 35);
-            this.btnEditarC2.TabIndex = 28;
-            this.btnEditarC2.UseVisualStyleBackColor = false;
-            // 
             // btnCrearC2
             // 
             this.btnCrearC2.BackColor = System.Drawing.Color.Transparent;
             this.btnCrearC2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearC2.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCrearC2.Location = new System.Drawing.Point(982, 46);
+            this.btnCrearC2.Location = new System.Drawing.Point(1112, 46);
             this.btnCrearC2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCrearC2.Name = "btnCrearC2";
             this.btnCrearC2.Size = new System.Drawing.Size(92, 35);
@@ -118,10 +105,10 @@
             this.btnInicioC2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnInicioC2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicioC2.ForeColor = System.Drawing.Color.Transparent;
-            this.btnInicioC2.Location = new System.Drawing.Point(861, 46);
+            this.btnInicioC2.Location = new System.Drawing.Point(1002, 46);
             this.btnInicioC2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInicioC2.Name = "btnInicioC2";
-            this.btnInicioC2.Size = new System.Drawing.Size(86, 35);
+            this.btnInicioC2.Size = new System.Drawing.Size(93, 35);
             this.btnInicioC2.TabIndex = 26;
             this.btnInicioC2.UseVisualStyleBackColor = false;
             // 
@@ -482,7 +469,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.HotPink;
-            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Locaciones;
+            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Locacion;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1516, 901);
             this.Controls.Add(this.panelBajoTechoCE);
@@ -492,7 +479,6 @@
             this.Controls.Add(this.rdbBajoTecho);
             this.Controls.Add(this.btnReportesC2);
             this.Controls.Add(this.btnVerC2);
-            this.Controls.Add(this.btnEditarC2);
             this.Controls.Add(this.btnCrearC2);
             this.Controls.Add(this.btnInicioC2);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -511,7 +497,6 @@
 
         private System.Windows.Forms.Button btnReportesC2;
         private System.Windows.Forms.Button btnVerC2;
-        private System.Windows.Forms.Button btnEditarC2;
         private System.Windows.Forms.Button btnCrearC2;
         private System.Windows.Forms.Button btnInicioC2;
         private System.Windows.Forms.RadioButton rdbBajoTecho;

@@ -37,7 +37,6 @@
             this.btnExportarPE = new System.Windows.Forms.Button();
             this.btnInicioRPE = new System.Windows.Forms.Button();
             this.btnCrearRPE = new System.Windows.Forms.Button();
-            this.btnEditarRPE = new System.Windows.Forms.Button();
             this.btnVerRPE = new System.Windows.Forms.Button();
             this.btnReportesRPE = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGVProxEventosPE)).BeginInit();
@@ -139,7 +138,7 @@
             this.btnInicioRPE.BackColor = System.Drawing.Color.Transparent;
             this.btnInicioRPE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicioRPE.ForeColor = System.Drawing.Color.Transparent;
-            this.btnInicioRPE.Location = new System.Drawing.Point(857, 44);
+            this.btnInicioRPE.Location = new System.Drawing.Point(1007, 44);
             this.btnInicioRPE.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInicioRPE.Name = "btnInicioRPE";
             this.btnInicioRPE.Size = new System.Drawing.Size(80, 35);
@@ -152,26 +151,13 @@
             this.btnCrearRPE.BackColor = System.Drawing.Color.Transparent;
             this.btnCrearRPE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearRPE.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCrearRPE.Location = new System.Drawing.Point(979, 44);
+            this.btnCrearRPE.Location = new System.Drawing.Point(1123, 44);
             this.btnCrearRPE.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCrearRPE.Name = "btnCrearRPE";
             this.btnCrearRPE.Size = new System.Drawing.Size(80, 35);
             this.btnCrearRPE.TabIndex = 9;
             this.btnCrearRPE.UseVisualStyleBackColor = false;
             this.btnCrearRPE.Click += new System.EventHandler(this.btnCrearRPE_Click);
-            // 
-            // btnEditarRPE
-            // 
-            this.btnEditarRPE.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditarRPE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarRPE.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEditarRPE.Location = new System.Drawing.Point(1099, 44);
-            this.btnEditarRPE.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnEditarRPE.Name = "btnEditarRPE";
-            this.btnEditarRPE.Size = new System.Drawing.Size(92, 35);
-            this.btnEditarRPE.TabIndex = 10;
-            this.btnEditarRPE.UseVisualStyleBackColor = false;
-            this.btnEditarRPE.Click += new System.EventHandler(this.btnEditarRPE_Click);
             // 
             // btnVerRPE
             // 
@@ -194,7 +180,7 @@
             this.btnReportesRPE.Location = new System.Drawing.Point(1317, 44);
             this.btnReportesRPE.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReportesRPE.Name = "btnReportesRPE";
-            this.btnReportesRPE.Size = new System.Drawing.Size(131, 35);
+            this.btnReportesRPE.Size = new System.Drawing.Size(144, 35);
             this.btnReportesRPE.TabIndex = 12;
             this.btnReportesRPE.UseVisualStyleBackColor = false;
             this.btnReportesRPE.Click += new System.EventHandler(this.btnReportesRPE_Click);
@@ -203,12 +189,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Reportes;
+            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Reporte;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1516, 901);
             this.Controls.Add(this.btnReportesRPE);
             this.Controls.Add(this.btnVerRPE);
-            this.Controls.Add(this.btnEditarRPE);
             this.Controls.Add(this.btnCrearRPE);
             this.Controls.Add(this.btnInicioRPE);
             this.Controls.Add(this.btnExportarPE);
@@ -237,7 +222,6 @@
         private System.Windows.Forms.Button btnExportarPE;
         private System.Windows.Forms.Button btnInicioRPE;
         private System.Windows.Forms.Button btnCrearRPE;
-        private System.Windows.Forms.Button btnEditarRPE;
         private System.Windows.Forms.Button btnVerRPE;
         private System.Windows.Forms.Button btnReportesRPE;
     }

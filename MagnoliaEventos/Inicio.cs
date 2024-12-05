@@ -1,10 +1,12 @@
-﻿using System;
+﻿using MagnoliaEventos.API;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
@@ -22,35 +24,28 @@ namespace MagnoliaEventos
             InitializeComponent();
             _httpClient = new HttpClient
             {
-
+                BaseAddress = new Uri("https://localhost:7003/")
             };
         }
 
         private async void btnNextSesión_Click(object sender, EventArgs e)
         {
             string contra, correo;
-            contra = txtContraseña.Text ;
-            correo = txtCorreo.Text ;
+            contra = txtContraseña.Text;
+            correo = txtCorreo.Text;
 
-            if (string.IsNullOrEmpty(correo) || string.IsNullOrEmpty(contra))
+
+            if (string.IsNullOrWhiteSpace(correo) || string.IsNullOrWhiteSpace(contra))
             {
-                MessageBox.Show("Por favor, ingrese usuario y contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor, ingrese el correo y la contraseña.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            try
-            {
-                var resultado = await validar(correo, contra);
-                if (resultado != null) {
-                    this.cerrarForm;
-                }
-                else
-                {
-                    MessageBox.Show("Usuario o contraseña incorrectos.", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
+            HttpResponseMessage response = await _httpClient.GetAsync();
 
-           
+            
+
+
 
         }
 
@@ -61,15 +56,6 @@ namespace MagnoliaEventos
             landingPage.Show();
         }
 
-        private async void validar(string correo, string contra)
-        {
-            var pedir = new
-            {
-                correo = correo,
-                contra = contra
-            };
-
-            string json = JsonConverter.Se
-        }
+    
     }
 }

@@ -30,7 +30,6 @@
         {
             this.btnReportesRFAC = new System.Windows.Forms.Button();
             this.btnVerRFAC = new System.Windows.Forms.Button();
-            this.btnEditarRFAC = new System.Windows.Forms.Button();
             this.btnCrearRFAC = new System.Windows.Forms.Button();
             this.btnInicioRFAC = new System.Windows.Forms.Button();
             this.btnExportarFAC = new System.Windows.Forms.Button();
@@ -51,7 +50,7 @@
             this.btnReportesRFAC.Location = new System.Drawing.Point(1317, 41);
             this.btnReportesRFAC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReportesRFAC.Name = "btnReportesRFAC";
-            this.btnReportesRFAC.Size = new System.Drawing.Size(132, 35);
+            this.btnReportesRFAC.Size = new System.Drawing.Size(145, 35);
             this.btnReportesRFAC.TabIndex = 24;
             this.btnReportesRFAC.UseVisualStyleBackColor = false;
             this.btnReportesRFAC.Click += new System.EventHandler(this.btnReportesRFAC_Click);
@@ -69,25 +68,12 @@
             this.btnVerRFAC.UseVisualStyleBackColor = false;
             this.btnVerRFAC.Click += new System.EventHandler(this.btnVerRFAC_Click);
             // 
-            // btnEditarRFAC
-            // 
-            this.btnEditarRFAC.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditarRFAC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarRFAC.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEditarRFAC.Location = new System.Drawing.Point(1100, 41);
-            this.btnEditarRFAC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnEditarRFAC.Name = "btnEditarRFAC";
-            this.btnEditarRFAC.Size = new System.Drawing.Size(92, 35);
-            this.btnEditarRFAC.TabIndex = 22;
-            this.btnEditarRFAC.UseVisualStyleBackColor = false;
-            this.btnEditarRFAC.Click += new System.EventHandler(this.btnEditarRFAC_Click);
-            // 
             // btnCrearRFAC
             // 
             this.btnCrearRFAC.BackColor = System.Drawing.Color.Transparent;
             this.btnCrearRFAC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearRFAC.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCrearRFAC.Location = new System.Drawing.Point(980, 41);
+            this.btnCrearRFAC.Location = new System.Drawing.Point(1119, 41);
             this.btnCrearRFAC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCrearRFAC.Name = "btnCrearRFAC";
             this.btnCrearRFAC.Size = new System.Drawing.Size(80, 35);
@@ -100,7 +86,7 @@
             this.btnInicioRFAC.BackColor = System.Drawing.Color.Transparent;
             this.btnInicioRFAC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicioRFAC.ForeColor = System.Drawing.Color.Transparent;
-            this.btnInicioRFAC.Location = new System.Drawing.Point(858, 41);
+            this.btnInicioRFAC.Location = new System.Drawing.Point(1011, 41);
             this.btnInicioRFAC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInicioRFAC.Name = "btnInicioRFAC";
             this.btnInicioRFAC.Size = new System.Drawing.Size(80, 35);
@@ -200,12 +186,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Reportes;
+            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Reporte;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1516, 901);
             this.Controls.Add(this.btnReportesRFAC);
             this.Controls.Add(this.btnVerRFAC);
-            this.Controls.Add(this.btnEditarRFAC);
             this.Controls.Add(this.btnCrearRFAC);
             this.Controls.Add(this.btnInicioRFAC);
             this.Controls.Add(this.btnExportarFAC);
@@ -226,7 +211,6 @@
 
         private System.Windows.Forms.Button btnReportesRFAC;
         private System.Windows.Forms.Button btnVerRFAC;
-        private System.Windows.Forms.Button btnEditarRFAC;
         private System.Windows.Forms.Button btnCrearRFAC;
         private System.Windows.Forms.Button btnInicioRFAC;
         private System.Windows.Forms.Button btnExportarFAC;

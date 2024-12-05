@@ -30,7 +30,6 @@
         {
             this.btnReportesRIA = new System.Windows.Forms.Button();
             this.btnVerRIA = new System.Windows.Forms.Button();
-            this.btnEditarRIA = new System.Windows.Forms.Button();
             this.btnCrearRIA = new System.Windows.Forms.Button();
             this.btnInicioRIA = new System.Windows.Forms.Button();
             this.btnExportarIA = new System.Windows.Forms.Button();
@@ -61,7 +60,7 @@
             this.btnVerRIA.BackColor = System.Drawing.Color.Transparent;
             this.btnVerRIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerRIA.ForeColor = System.Drawing.Color.Transparent;
-            this.btnVerRIA.Location = new System.Drawing.Point(1225, 46);
+            this.btnVerRIA.Location = new System.Drawing.Point(1231, 46);
             this.btnVerRIA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnVerRIA.Name = "btnVerRIA";
             this.btnVerRIA.Size = new System.Drawing.Size(58, 35);
@@ -69,25 +68,12 @@
             this.btnVerRIA.UseVisualStyleBackColor = false;
             this.btnVerRIA.Click += new System.EventHandler(this.btnVerRIA_Click);
             // 
-            // btnEditarRIA
-            // 
-            this.btnEditarRIA.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditarRIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarRIA.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEditarRIA.Location = new System.Drawing.Point(1099, 46);
-            this.btnEditarRIA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnEditarRIA.Name = "btnEditarRIA";
-            this.btnEditarRIA.Size = new System.Drawing.Size(92, 35);
-            this.btnEditarRIA.TabIndex = 22;
-            this.btnEditarRIA.UseVisualStyleBackColor = false;
-            this.btnEditarRIA.Click += new System.EventHandler(this.btnEditarRIA_Click);
-            // 
             // btnCrearRIA
             // 
             this.btnCrearRIA.BackColor = System.Drawing.Color.Transparent;
             this.btnCrearRIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearRIA.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCrearRIA.Location = new System.Drawing.Point(979, 46);
+            this.btnCrearRIA.Location = new System.Drawing.Point(1131, 46);
             this.btnCrearRIA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCrearRIA.Name = "btnCrearRIA";
             this.btnCrearRIA.Size = new System.Drawing.Size(80, 35);
@@ -100,7 +86,7 @@
             this.btnInicioRIA.BackColor = System.Drawing.Color.Transparent;
             this.btnInicioRIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicioRIA.ForeColor = System.Drawing.Color.Transparent;
-            this.btnInicioRIA.Location = new System.Drawing.Point(857, 46);
+            this.btnInicioRIA.Location = new System.Drawing.Point(1013, 46);
             this.btnInicioRIA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInicioRIA.Name = "btnInicioRIA";
             this.btnInicioRIA.Size = new System.Drawing.Size(80, 35);
@@ -200,12 +186,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Reportes;
+            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Reporte;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1516, 901);
             this.Controls.Add(this.btnReportesRIA);
             this.Controls.Add(this.btnVerRIA);
-            this.Controls.Add(this.btnEditarRIA);
             this.Controls.Add(this.btnCrearRIA);
             this.Controls.Add(this.btnInicioRIA);
             this.Controls.Add(this.btnExportarIA);
@@ -226,7 +211,6 @@
 
         private System.Windows.Forms.Button btnReportesRIA;
         private System.Windows.Forms.Button btnVerRIA;
-        private System.Windows.Forms.Button btnEditarRIA;
         private System.Windows.Forms.Button btnCrearRIA;
         private System.Windows.Forms.Button btnInicioRIA;
         private System.Windows.Forms.Button btnExportarIA;

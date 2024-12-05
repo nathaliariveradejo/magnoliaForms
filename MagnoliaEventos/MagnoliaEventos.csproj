@@ -81,6 +81,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\GetTipo.cs" />
     <Compile Include="CrearEvento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,7 +100,6 @@
     <Compile Include="Factura.Designer.cs">
       <DependentUpon>Factura.cs</DependentUpon>
     </Compile>
-    <Compile Include="GetUserResponse.cs" />
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,25 +230,43 @@
     <None Include="Resources\Crear Evento.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Editar Evento.jpg" />
+    <None Include="Resources\8.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Factura.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Log in.png" />
+    <None Include="Resources\2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Bienvenido.png" />
+    <None Include="Resources\3.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Locaciones.png" />
+    <None Include="Resources\6.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Inicio.png" />
+    <None Include="Resources\1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Reportes.png" />
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crear Evento1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Editar evento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Landing page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crear Evento2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Locacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reporte.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

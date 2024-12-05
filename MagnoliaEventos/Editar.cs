@@ -16,5 +16,10 @@ namespace MagnoliaEventos
         {
             InitializeComponent();
         }
+
+        private void btnInicioE_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

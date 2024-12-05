@@ -44,7 +44,6 @@
             this.btnEventoSIg = new System.Windows.Forms.Button();
             this.btnReporteE = new System.Windows.Forms.Button();
             this.btnVerC = new System.Windows.Forms.Button();
-            this.btnEditarC = new System.Windows.Forms.Button();
             this.btnCrearC = new System.Windows.Forms.Button();
             this.btnInicioC = new System.Windows.Forms.Button();
             this.txtDetallesCE = new System.Windows.Forms.TextBox();
@@ -52,6 +51,7 @@
             this.cbEventType = new System.Windows.Forms.ComboBox();
             this.lblCosto = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbPago = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtCantPersCE)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,7 +61,7 @@
             this.dtpFechaCE.CalendarForeColor = System.Drawing.Color.RosyBrown;
             this.dtpFechaCE.CalendarMonthBackground = System.Drawing.Color.FloralWhite;
             this.dtpFechaCE.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaCE.Location = new System.Drawing.Point(219, 294);
+            this.dtpFechaCE.Location = new System.Drawing.Point(219, 275);
             this.dtpFechaCE.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpFechaCE.Name = "dtpFechaCE";
             this.dtpFechaCE.Size = new System.Drawing.Size(319, 29);
@@ -72,7 +72,7 @@
             this.dtpHoraCE.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpHoraCE.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpHoraCE.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpHoraCE.Location = new System.Drawing.Point(219, 378);
+            this.dtpHoraCE.Location = new System.Drawing.Point(219, 356);
             this.dtpHoraCE.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpHoraCE.Name = "dtpHoraCE";
             this.dtpHoraCE.ShowUpDown = true;
@@ -201,10 +201,10 @@
             // 
             // txtCantPersCE
             // 
-            this.txtCantPersCE.Location = new System.Drawing.Point(406, 610);
+            this.txtCantPersCE.Location = new System.Drawing.Point(406, 522);
             this.txtCantPersCE.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCantPersCE.Name = "txtCantPersCE";
-            this.txtCantPersCE.Size = new System.Drawing.Size(274, 26);
+            this.txtCantPersCE.Size = new System.Drawing.Size(262, 26);
             this.txtCantPersCE.TabIndex = 19;
             // 
             // btnEventoSIg
@@ -245,24 +245,12 @@
             this.btnVerC.TabIndex = 24;
             this.btnVerC.UseVisualStyleBackColor = false;
             // 
-            // btnEditarC
-            // 
-            this.btnEditarC.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditarC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarC.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEditarC.Location = new System.Drawing.Point(1106, 42);
-            this.btnEditarC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnEditarC.Name = "btnEditarC";
-            this.btnEditarC.Size = new System.Drawing.Size(97, 35);
-            this.btnEditarC.TabIndex = 23;
-            this.btnEditarC.UseVisualStyleBackColor = false;
-            // 
             // btnCrearC
             // 
             this.btnCrearC.BackColor = System.Drawing.Color.Transparent;
             this.btnCrearC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearC.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCrearC.Location = new System.Drawing.Point(987, 42);
+            this.btnCrearC.Location = new System.Drawing.Point(1118, 42);
             this.btnCrearC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCrearC.Name = "btnCrearC";
             this.btnCrearC.Size = new System.Drawing.Size(92, 35);
@@ -275,7 +263,7 @@
             this.btnInicioC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnInicioC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicioC.ForeColor = System.Drawing.Color.Transparent;
-            this.btnInicioC.Location = new System.Drawing.Point(865, 42);
+            this.btnInicioC.Location = new System.Drawing.Point(1005, 42);
             this.btnInicioC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInicioC.Name = "btnInicioC";
             this.btnInicioC.Size = new System.Drawing.Size(86, 35);
@@ -313,9 +301,9 @@
             "Graduación",
             "Festividad",
             "Quinceaños"});
-            this.cbEventType.Location = new System.Drawing.Point(143, 537);
+            this.cbEventType.Location = new System.Drawing.Point(328, 447);
             this.cbEventType.Name = "cbEventType";
-            this.cbEventType.Size = new System.Drawing.Size(395, 28);
+            this.cbEventType.Size = new System.Drawing.Size(340, 28);
             this.cbEventType.TabIndex = 29;
             // 
             // lblCosto
@@ -323,7 +311,7 @@
             this.lblCosto.AutoSize = true;
             this.lblCosto.BackColor = System.Drawing.Color.Transparent;
             this.lblCosto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCosto.Location = new System.Drawing.Point(1018, 808);
+            this.lblCosto.Location = new System.Drawing.Point(1020, 771);
             this.lblCosto.Name = "lblCosto";
             this.lblCosto.Size = new System.Drawing.Size(71, 29);
             this.lblCosto.TabIndex = 30;
@@ -334,19 +322,28 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(880, 808);
+            this.label1.Location = new System.Drawing.Point(907, 771);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 29);
             this.label1.TabIndex = 31;
             this.label1.Text = "Precio:";
             // 
+            // cbPago
+            // 
+            this.cbPago.FormattingEnabled = true;
+            this.cbPago.Location = new System.Drawing.Point(340, 598);
+            this.cbPago.Name = "cbPago";
+            this.cbPago.Size = new System.Drawing.Size(328, 28);
+            this.cbPago.TabIndex = 32;
+            // 
             // CrearEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Crear_Evento;
+            this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Crear_Evento1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1516, 901);
+            this.Controls.Add(this.cbPago);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCosto);
             this.Controls.Add(this.cbEventType);
@@ -354,7 +351,6 @@
             this.Controls.Add(this.txtDetallesCE);
             this.Controls.Add(this.btnReporteE);
             this.Controls.Add(this.btnVerC);
-            this.Controls.Add(this.btnEditarC);
             this.Controls.Add(this.btnCrearC);
             this.Controls.Add(this.btnInicioC);
             this.Controls.Add(this.btnEventoSIg);
@@ -398,7 +394,6 @@
         private System.Windows.Forms.Button btnEventoSIg;
         private System.Windows.Forms.Button btnReporteE;
         private System.Windows.Forms.Button btnVerC;
-        private System.Windows.Forms.Button btnEditarC;
         private System.Windows.Forms.Button btnCrearC;
         private System.Windows.Forms.Button btnInicioC;
         private System.Windows.Forms.TextBox txtDetallesCE;
@@ -406,5 +401,6 @@
         private System.Windows.Forms.ComboBox cbEventType;
         private System.Windows.Forms.Label lblCosto;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbPago;
     }
 }
