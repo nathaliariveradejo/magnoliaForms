@@ -81,7 +81,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="API\GetTipo.cs" />
+    <Compile Include="API\LogInRequest.cs" />
     <Compile Include="CrearEvento.cs">
       <SubType>Form</SubType>
     </Compile>

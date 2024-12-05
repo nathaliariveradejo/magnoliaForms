@@ -23,70 +23,12 @@ namespace MagnoliaEventos
             };
             InitializeComponent();
         }
-
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
-        {
-            
-        }
-
-        private async void btnSesión_Click(object sender, EventArgs e)
-        {
-          
-        }
         
-        public enum TipoDeEvento
-        {
-            Matrimonio,
-            Cumpleaños,
-            Reunión_Ejecutiva,
-            Graduación,
-            Festividad,
-            Quinceaños
-        }
-        
-        public class PutEventosRequest
-        {
-            
-            public TipoDeEvento Tipo_Evento { get; set; }
-            
-            public string Fecha_Evento { get; set; }
-            
-            public string Hora_Evento { get; set; }
-            
-            public int Número_Personas { get; set; }
-            
-            public int ID_Usuario { get; set; }
-            
-            public int ID_Locacion { get; set; }
-        }
-
         async private void btnSesión_Click_1(object sender, EventArgs e)
         {
             Inicio inicio = new Inicio();
-
             this.Hide();
             inicio.Show();
-
-            // Poner logica para extraer la info necesaria de los otros campos
-
-            // Crear su objeto de request usando la info que sacaron de los otros campos
-            var idEvento = 1;
-            var putEventosRequest = new PutEventosRequest()
-            {
-                Tipo_Evento = TipoDeEvento.Cumpleaños,
-                Fecha_Evento = "2021-09-01",
-                Hora_Evento = "15:00:00",
-                Número_Personas = 100,
-                ID_Usuario = 5,
-                ID_Locacion = 8,
-            };
-
-            // Llamar a la API
-            HttpResponseMessage response = await _httpClient.PutAsJsonAsync($"Eventos/{idEvento}", putEventosRequest);
-
-            // Procesar response
-            Console.WriteLine("Respuesta de APIpi:");
-            Console.WriteLine(response.StatusCode);
         }
     }
 }

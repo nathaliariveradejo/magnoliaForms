@@ -1,18 +1,9 @@
 ﻿using MagnoliaEventos.API;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Json;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static MagnoliaEventos.Form1;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace MagnoliaEventos
 {
@@ -21,11 +12,11 @@ namespace MagnoliaEventos
         private HttpClient _httpClient;
         public Inicio()
         {
-            InitializeComponent();
             _httpClient = new HttpClient
             {
                 BaseAddress = new Uri("https://localhost:7003/")
             };
+            InitializeComponent();
         }
 
         private async void btnNextSesión_Click(object sender, EventArgs e)
@@ -41,12 +32,32 @@ namespace MagnoliaEventos
                 return;
             }
 
-            // HttpResponseMessage response = await _httpClient.GetAsync();
+            var request = new LogInRequest
+            {
+                Correo_Electrónico = correo,
+                Contraseña = contra
+            };
 
-            
+            HttpResponseMessage response = await _httpClient.PostAsJsonAsync("Auth/LogIn", request);
 
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                this.cerrarForm();
+            }
 
+            if (response.StatusCode == HttpStatusCode.NotFound)
+            {
+                MessageBox.Show("No existe una cuenta con el correo ingresado.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            if (response.StatusCode == HttpStatusCode.Unauthorized)
+            {
+                MessageBox.Show("La contraseña ingresada es incorrecta.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            Console.Write(response);
         }
 
         private void cerrarForm()
@@ -55,7 +66,5 @@ namespace MagnoliaEventos
             this.Hide();
             landingPage.Show();
         }
-
-    
     }
 }

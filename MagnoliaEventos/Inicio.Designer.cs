@@ -53,7 +53,6 @@
             this.txtContraseña.PasswordChar = '-';
             this.txtContraseña.Size = new System.Drawing.Size(304, 31);
             this.txtContraseña.TabIndex = 1;
-            this.txtContraseña.Visible = false;
             // 
             // btnNextSesión
             // 
@@ -82,6 +81,7 @@
             this.Text = "Inicio";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
