@@ -65,6 +65,7 @@
             this.dtpFechaCE.Name = "dtpFechaCE";
             this.dtpFechaCE.Size = new System.Drawing.Size(214, 21);
             this.dtpFechaCE.TabIndex = 0;
+            this.dtpFechaCE.ValueChanged += new System.EventHandler(this.dtpFechaCE_ValueChanged);
             // 
             // dtpHoraCE
             // 
@@ -76,6 +77,7 @@
             this.dtpHoraCE.ShowUpDown = true;
             this.dtpHoraCE.Size = new System.Drawing.Size(214, 24);
             this.dtpHoraCE.TabIndex = 1;
+            this.dtpHoraCE.ValueChanged += new System.EventHandler(this.dtpHoraCE_ValueChanged);
             // 
             // chkFoto
             // 
@@ -272,16 +274,24 @@
             this.btnSigCE1.Size = new System.Drawing.Size(191, 35);
             this.btnSigCE1.TabIndex = 28;
             this.btnSigCE1.UseVisualStyleBackColor = false;
+            this.btnSigCE1.Click += new System.EventHandler(this.btnSigCE1_Click);
             // 
             // cbEventType
             // 
             this.cbEventType.FormattingEnabled = true;
-            this.cbEventType.Items.AddRange(new object[] { "Matrimonio", "Cumpleaños", "Reunión_Ejecutiva", "Graduación", "Festividad", "Quinceaños" });
+            this.cbEventType.Items.AddRange(new object[] {
+            "Matrimonio",
+            "Cumpleaños",
+            "Reunión_Ejecutiva",
+            "Graduación",
+            "Festividad",
+            "Quinceaños"});
             this.cbEventType.Location = new System.Drawing.Point(219, 291);
-            this.cbEventType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbEventType.Margin = new System.Windows.Forms.Padding(2);
             this.cbEventType.Name = "cbEventType";
             this.cbEventType.Size = new System.Drawing.Size(228, 21);
             this.cbEventType.TabIndex = 29;
+            this.cbEventType.SelectedIndexChanged += new System.EventHandler(this.cbEventType_SelectedIndexChanged);
             // 
             // lblCosto
             // 
@@ -311,7 +321,7 @@
             // 
             this.cbPago.FormattingEnabled = true;
             this.cbPago.Location = new System.Drawing.Point(227, 389);
-            this.cbPago.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbPago.Margin = new System.Windows.Forms.Padding(2);
             this.cbPago.Name = "cbPago";
             this.cbPago.Size = new System.Drawing.Size(220, 21);
             this.cbPago.TabIndex = 32;
@@ -352,6 +362,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCantPersCE)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
