@@ -94,6 +94,30 @@ namespace MagnoliaEventos
             var respuestaBitacoras = await _httpClient.GetAsync("Bitacora");
             var respuestaJson = await respuestaBitacoras.Content.ReadAsStringAsync();
             var bitacoras = System.Text.Json.JsonSerializer.Deserialize<List<Bitacora>>(respuestaJson);
+            mostrarBitacoras(bitacoras);
+        }
+
+        private void mostrarBitacoras(List<Bitacora> bitacoras)
+        {
+            // Asigna la lista como fuente de datos para el DataGridView
+            dgvBitacora.DataSource = bitacoras;
+
+            // Configura las columnas del DataGridView
+            dgvBitacora.Columns["sesion"].HeaderText = "Sesión";
+            dgvBitacora.Columns["usuario"].HeaderText = "Usuario";
+            dgvBitacora.Columns["mensaje"].HeaderText = "Mensaje";
+
+            // Ajusta automáticamente el ancho de las columnas
+            dgvBitacora.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // Configura la selección para facilitar la interacción
+            dgvBitacora.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvBitacora.ReadOnly = true; // Desactiva la edición si solo deseas mostrar los datos
+        }
+
+        private void dgvBitacora_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
