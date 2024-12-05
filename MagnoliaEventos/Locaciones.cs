@@ -13,10 +13,12 @@ namespace MagnoliaEventos
     public partial class Locaciones : Form
     {
         private Dictionary<RadioButton, (int value, string txt)> radioButtonValues;
-
-        public Locaciones()
-        {
+        private EventoInfo eventoInfo;
+        public Locaciones(EventoInfo eventoInfo)
+        {      
+            this.eventoInfo = eventoInfo;
             InitializeComponent();
+            
             radioButtonValues = new Dictionary<RadioButton, (int value, string txt)>
             {
                 {rdbPlayaCE, (950, "Playa") },
@@ -29,8 +31,23 @@ namespace MagnoliaEventos
                 {rdbCapillaCE, (1000, "Capilla") },
                 {rdbInvernaderoCE, (1200, "Invernadero") }
             };
-
+            foreach (var radioButton in radioButtonValues.Keys)
+            {
+                radioButton.CheckedChanged += new EventHandler(RadioButton_CheckedChanged);
+            }
         }
+
+        private void RadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton radioButton = sender as RadioButton;
+            if (radioButton.Checked)
+            {
+                eventoInfo.PrecioLocacion = radioButtonValues[radioButton].value;
+                eventoInfo.Locacion = radioButtonValues[radioButton].txt;
+            }
+        }
+
+
 
         private void rdbAireLibre_CheckedChanged(object sender, EventArgs e)
         {
@@ -107,6 +124,47 @@ namespace MagnoliaEventos
         {
             string resp;
             resp = "Invernadero";
+        }
+
+        private void btnSig_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(eventoInfo.Locacion))
+            {
+                MessageBox.Show("Por favor, seleccione una locación antes de continuar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                
+                Factura facturaForm = new Factura(eventoInfo);
+                facturaForm.Show();
+                this.Close();
+            }
+        }
+
+        private void btnInicioC2_Click(object sender, EventArgs e)
+        {
+            LandingPage form8 = new LandingPage();
+            form8.Show();
+            this.Close();
+        }
+
+        private void btnCrearC2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVerC2_Click(object sender, EventArgs e)
+        {
+            Visualizar form6 = new Visualizar();
+            form6.Show();
+            this.Close();
+        }
+
+        private void btnReportesC2_Click(object sender, EventArgs e)
+        {
+            ReportePE form9 = new ReportePE();
+            form9.Show();
+            this.Close();
         }
     }
 }
