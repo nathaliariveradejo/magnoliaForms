@@ -36,18 +36,16 @@ namespace MagnoliaEventos
             _checkBoxValues = new Dictionary<CheckBox, (int value, string text)>
             {
                 { chkFoto, (200, "Fotografía") },
-                { chkDecoBasic, (500, "Decoración Básica") },
-                { chkDecoPremium, (1000, "Decoración Premium") },
+                { chkDecoBasic, (500, "Decoración_Básica") },
+                { chkDecoPremium, (1000, "Decoración_Premium") },
                 { chkCatering, (50, "Catering") },
-                { chkSonido, (300, "Equipo de Sonido con DJ") },
+                { chkSonido, (300, "Equipo_de_Sonido_con_DJ") },
                 { chkMariachi, (120, "Mariachi") },
                 { chkMurga, (250, "Murga") },
-                { chkMúsica, (400, "Música en Vivo") },
+                { chkMúsica, (400, "Música_en_Vivo") },
                 { chkAnimador, (250, "Animadores") },
                 { chkPayaso, (50, "Payaso") }
             };
-
-            btnSigCE1.Click += btnSigCE1_Click;
 
             // Conectar el evento CheckedChanged de los CheckBox al manejador de eventos
             foreach (var checkBox in _checkBoxValues.Keys)
@@ -109,6 +107,8 @@ namespace MagnoliaEventos
             _eventoInfo.Detalles = _detalleS;
             _eventoInfo.ID_Evento = await CrearEventoEnBd();
 
+            crearDetallesDeServicio();
+
             CrearFactura();
 
             Factura facturaForm = new Factura(_eventoInfo);
@@ -155,6 +155,31 @@ namespace MagnoliaEventos
             };
             
             await _httpClient.PostAsJsonAsync("Facturas", request);
+        }
+
+        private async void crearDetallesDeServicio()
+        {
+            var serviciosAdicionalesResponse = await _httpClient.GetAsync("ServiciosAd");
+            var serviciosAdJson = await serviciosAdicionalesResponse.Content.ReadAsStringAsync();
+            var serviciosAd = System.Text.Json.JsonSerializer.Deserialize<List<ServiciosAd>>(serviciosAdJson);
+            
+            _opcionS.ForEach(opcion =>
+            {
+                crearDetalleDeServicio(opcion, serviciosAd);
+            });
+        }
+
+        private async void crearDetalleDeServicio(string nombreServicio, List<ServiciosAd> serviciosAdicionales)
+        {
+            var idServicio = serviciosAdicionales.Find(servicio => servicio.nombre_Servicio == nombreServicio)
+                .iD_Servicio;
+            var request = new PostDetallesRequest
+            {
+                Notas_Adicionales = $"Evento con ID [{_eventoInfo.ID_Evento}] contrata Servicio Ad con ID [{idServicio}]",
+                ID_Servicio = idServicio,
+                ID_Eventos = _eventoInfo.ID_Evento
+            };
+            var response = await _httpClient.PostAsJsonAsync("DetallesServicios", request);
         }
 
         private void dtpFechaCE_ValueChanged(object sender, EventArgs e)
