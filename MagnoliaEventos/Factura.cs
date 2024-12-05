@@ -32,6 +32,7 @@ namespace MagnoliaEventos
             lblLocacion.Text = eventoInfo.Locacion;
             precioL= eventoInfo.PrecioLocacion;
             lblEstado.Text = "En_Espera";
+            lblID.Text = eventoInfo.ID_Evento.ToString();
 
             /*total = costoSA + precioL;
              lblTotal.Text = total.ToString();

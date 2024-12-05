@@ -18,5 +18,6 @@ namespace MagnoliaEventos
         public string Detalles {  get; set; }
         public string Locacion { get; set; }
         public int PrecioLocacion { get; set; }
+        public int ID_Evento { get; set; }
     }
 }

@@ -283,13 +283,7 @@
             // cbEventType
             // 
             this.cbEventType.FormattingEnabled = true;
-            this.cbEventType.Items.AddRange(new object[] {
-            "Matrimonio",
-            "Cumpleaños",
-            "Reunión_Ejecutiva",
-            "Graduación",
-            "Festividad",
-            "Quinceaños"});
+            this.cbEventType.Items.AddRange(new object[] { "Matrimonio", "Cumpleaños", "Reunión_Ejecutiva", "Graduación", "Festividad", "Quinceaños" });
             this.cbEventType.Location = new System.Drawing.Point(219, 291);
             this.cbEventType.Margin = new System.Windows.Forms.Padding(2);
             this.cbEventType.Name = "cbEventType";
@@ -324,6 +318,7 @@
             // cbPago
             // 
             this.cbPago.FormattingEnabled = true;
+            this.cbPago.Items.AddRange(new object[] { "Transferencia", "Yappy" });
             this.cbPago.Location = new System.Drawing.Point(227, 389);
             this.cbPago.Margin = new System.Windows.Forms.Padding(2);
             this.cbPago.Name = "cbPago";
@@ -366,7 +361,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCantPersCE)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

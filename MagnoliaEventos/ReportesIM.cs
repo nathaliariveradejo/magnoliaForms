@@ -40,9 +40,9 @@ namespace MagnoliaEventos
 
         private void btnCrearRIM_Click(object sender, EventArgs e)
         {
-            CrearEvento crearEvento = new CrearEvento();
-            this.Hide();
-            crearEvento.Show();
+            Locaciones locaciones = new Locaciones();
+            Hide();
+            locaciones.Show();
         }
 
         private void btnInicioRIM_Click(object sender, EventArgs e)

@@ -1,29 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Json;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using MagnoliaEventos.API;
 
 namespace MagnoliaEventos
 {
     public partial class CrearEvento : Form
     {
-        private Dictionary<CheckBox, (int value, string text)> checkBoxValues;
+        private HttpClient _httpClient;
+        private EventoInfo _eventoInfo;
+        private Dictionary<CheckBox, (int value, string text)> _checkBoxValues;
 
-        private DateTime fechaS;
-        private DateTime horaS;
-        private int totalS;
-        private List<string> opcionS;
-        private int cantS;
-        private string tipoS;
-        private string metodoPagoS;
-        private string detalleS;
+        private DateTime _fechaS;
+        private DateTime _horaS;
+        private int _totalS;
+        private List<string> _opcionS;
+        private int _cantS;
+        private string _detalleS;
 
-        public CrearEvento()
+        public CrearEvento(EventoInfo eventoInfo)
         {
+            _httpClient = new HttpClient
+            {
+                BaseAddress = new Uri("https://localhost:7003/")
+            };
             InitializeComponent();
-            dtpFechaCE.ValueChanged += new EventHandler(dtpFechaCE_ValueChanged);
-            dtpHoraCE.ValueChanged += new EventHandler(dtpHoraCE_ValueChanged);
+            _eventoInfo = eventoInfo;
+            dtpFechaCE.ValueChanged += dtpFechaCE_ValueChanged;
+            dtpHoraCE.ValueChanged += dtpHoraCE_ValueChanged;
 
-            checkBoxValues = new Dictionary<CheckBox, (int value, string text)>
+            _checkBoxValues = new Dictionary<CheckBox, (int value, string text)>
             {
                 { chkFoto, (200, "Fotografía") },
                 { chkDecoBasic, (500, "Decoración Básica") },
@@ -37,18 +47,18 @@ namespace MagnoliaEventos
                 { chkPayaso, (50, "Payaso") }
             };
 
-            btnSigCE1.Click += new EventHandler(btnSigCE1_Click);
+            btnSigCE1.Click += btnSigCE1_Click;
 
             // Conectar el evento CheckedChanged de los CheckBox al manejador de eventos
-            foreach (var checkBox in checkBoxValues.Keys)
+            foreach (var checkBox in _checkBoxValues.Keys)
             {
-                checkBox.CheckedChanged += new EventHandler(CheckBox_CheckedChanged);
+                checkBox.CheckedChanged += CheckBox_CheckedChanged;
             }
 
             // Inicializar variables
-            cantS = 0;
-            totalS = 0;
-            opcionS = new List<string>();
+            _cantS = 0;
+            _totalS = 0;
+            _opcionS = new List<string>();
             UpdateTotalLabel();
 
         }
@@ -58,13 +68,13 @@ namespace MagnoliaEventos
 
             if (checkBox.Checked)
             {
-                totalS += checkBoxValues[checkBox].value;
-                opcionS.Add(checkBoxValues[checkBox].text);
+                _totalS += _checkBoxValues[checkBox].value;
+                _opcionS.Add(_checkBoxValues[checkBox].text);
             }
             else
             {
-                totalS -= checkBoxValues[checkBox].value;
-                opcionS.Remove(checkBoxValues[checkBox].text);
+                _totalS -= _checkBoxValues[checkBox].value;
+                _opcionS.Remove(_checkBoxValues[checkBox].text);
             }
 
             UpdateTotalLabel();
@@ -73,7 +83,7 @@ namespace MagnoliaEventos
         private void UpdateTotalLabel()
         {
             // Mostrar el total en el Label
-            lblCosto.Text = "$" + totalS.ToString();
+            lblCosto.Text = "$" + _totalS;
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
@@ -87,51 +97,86 @@ namespace MagnoliaEventos
             this.Close();
         }
 
-        private void btnSigCE1_Click(object sender, EventArgs e)
+        private async void btnSigCE1_Click(object sender, EventArgs e)
         {
-            var eventoInfo = new EventoInfo
-            {
-                TipoEvento = cbEventType.SelectedItem?.ToString(),
-                FechaEvento = dtpFechaCE.Value,
-                HoraEvento = dtpHoraCE.Value,
-                CantidadPersonas = (int)txtCantPersCE.Value,
-                CostoTotal = totalS,
-                Opciones = opcionS,
-                MetodoPago = cbPago.SelectedItem?.ToString(),
-                Detalles = detalleS.ToString()
-            };
+            _eventoInfo.TipoEvento = cbEventType.SelectedItem?.ToString();
+            _eventoInfo.FechaEvento = dtpFechaCE.Value;
+            _eventoInfo.HoraEvento = dtpHoraCE.Value;
+            _eventoInfo.CantidadPersonas = (int)txtCantPersCE.Value;
+            _eventoInfo.CostoTotal = _totalS;
+            _eventoInfo.Opciones = _opcionS;
+            _eventoInfo.MetodoPago = cbPago.SelectedItem?.ToString();
+            _eventoInfo.Detalles = _detalleS;
+            _eventoInfo.ID_Evento = await CrearEventoEnBd();
 
-            // Abrir el formulario de locaciones y pasarle el objeto eventoInfo
-            Locaciones locacionesForm = new Locaciones(eventoInfo);
-            locacionesForm.Show();
-            this.Close();
+            CrearFactura();
 
-
-            Factura facturaForm = new Factura(eventoInfo);
+            Factura facturaForm = new Factura(_eventoInfo);
             facturaForm.Show();
-            this.Hide();
+            Hide();
+        }
+        
+        private async Task<int> CrearEventoEnBd()
+        {
+            var request = new PostEventoRequest
+            {
+                Tipo_Evento = _eventoInfo.TipoEvento,
+                Fecha_Evento = _eventoInfo.FechaEvento.ToString("yyyy-MM-dd"),
+                Hora_Evento = _eventoInfo.HoraEvento.ToString("HH:mm:ss"),
+                Número_Personas = _eventoInfo.CantidadPersonas,
+                Correo_Electrónico = Form1.ObtenerUsuarioActual(),
+                ID_Locacion = await ObtenerIdDeLocacion()
+            };
+            var response = await _httpClient.PostAsJsonAsync("Eventos", request);
+            var respuestaJson = await response.Content.ReadAsStringAsync();
+            var evento = System.Text.Json.JsonSerializer.Deserialize<Evento>(respuestaJson);
+            return evento.iD_Evento;
+        }
+
+        private async Task<int> ObtenerIdDeLocacion()
+        {
+            var nombreLocacion = _eventoInfo.Locacion;
+            var respuestaLocaciones = await _httpClient.GetAsync("Locacion");
+            var respuestaJson = await respuestaLocaciones.Content.ReadAsStringAsync();
+            var locaciones = System.Text.Json.JsonSerializer.Deserialize<List<Locacion>>(respuestaJson);
+            
+            return locaciones.Find(locacion => locacion.tipo_Locacion == nombreLocacion).iD_Locacion;
+        }
+
+        private async void CrearFactura()
+        {
+            var request = new PostFacturaRequest
+            {
+                Fecha_Factura = DateTime.Today,
+                Método_Pago = _eventoInfo.MetodoPago,
+                Estado_Pago = "Pendiente",
+                Monto_Total = _eventoInfo.CostoTotal,
+                ID_Evento = _eventoInfo.ID_Evento
+            };
+            
+            await _httpClient.PostAsJsonAsync("Facturas", request);
         }
 
         private void dtpFechaCE_ValueChanged(object sender, EventArgs e)
         {
-            fechaS = dtpFechaCE.Value;
+            _fechaS = dtpFechaCE.Value;
         }
 
         private void dtpHoraCE_ValueChanged(object sender, EventArgs e)
         {
-            horaS = dtpHoraCE.Value;
+            _horaS = dtpHoraCE.Value;
         }
 
         private void cbEventType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cantS = (int)txtCantPersCE.Value;
+            _cantS = (int)txtCantPersCE.Value;
         }
 
         private void btnInicioC_Click(object sender, EventArgs e)
         {
             LandingPage form8 = new LandingPage();
             form8.Show();
-            this.Close();
+            Close();
         }
 
         private void btnCrearC_Click(object sender, EventArgs e)
@@ -143,12 +188,12 @@ namespace MagnoliaEventos
         {
             Visualizar form6 = new Visualizar();
             form6.Show();
-            this.Close();
+            Close();
         }
 
         private void txtDetallesCE_TextChanged(object sender, EventArgs e)
         {
-            detalleS = txtDetallesCE.ToString(); 
+            _detalleS = txtDetallesCE.ToString(); 
         }
     }
 }

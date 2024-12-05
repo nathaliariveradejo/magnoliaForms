@@ -12,14 +12,14 @@ namespace MagnoliaEventos
 {
     public partial class Locaciones : Form
     {
-        private Dictionary<RadioButton, (int value, string txt)> radioButtonValues;
-        private EventoInfo eventoInfo;
-        public Locaciones(EventoInfo eventoInfo)
+        private Dictionary<RadioButton, (int value, string txt)> _radioButtonValues;
+        private EventoInfo _eventoInfo;
+        public Locaciones()
         {      
-            this.eventoInfo = eventoInfo;
+            _eventoInfo = new EventoInfo();
             InitializeComponent();
             
-            radioButtonValues = new Dictionary<RadioButton, (int value, string txt)>
+            _radioButtonValues = new Dictionary<RadioButton, (int value, string txt)>
             {
                 {rdbPlayaCE, (950, "Playa") },
                 {rdbBosqueCE, (950, "Bosque") },
@@ -31,7 +31,7 @@ namespace MagnoliaEventos
                 {rdbCapillaCE, (1000, "Capilla") },
                 {rdbInvernaderoCE, (1200, "Invernadero") }
             };
-            foreach (var radioButton in radioButtonValues.Keys)
+            foreach (var radioButton in _radioButtonValues.Keys)
             {
                 radioButton.CheckedChanged += new EventHandler(RadioButton_CheckedChanged);
             }
@@ -42,8 +42,8 @@ namespace MagnoliaEventos
             RadioButton radioButton = sender as RadioButton;
             if (radioButton.Checked)
             {
-                eventoInfo.PrecioLocacion = radioButtonValues[radioButton].value;
-                eventoInfo.Locacion = radioButtonValues[radioButton].txt;
+                _eventoInfo.PrecioLocacion = _radioButtonValues[radioButton].value;
+                _eventoInfo.Locacion = _radioButtonValues[radioButton].txt;
             }
         }
 
@@ -51,14 +51,19 @@ namespace MagnoliaEventos
 
         private void rdbAireLibre_CheckedChanged(object sender, EventArgs e)
         {
-            panelBajoTechoCE.Enabled = false;
+            panelBajoTechoCE.Visible = false;
             panelAireLibreCE.Visible = true;
+        }
+        
+        private void rdbBajoTecho_CheckedChanged(object sender, EventArgs e)
+        {
+            panelAireLibreCE.Visible=false;
+            panelBajoTechoCE.Visible=true;
         }
 
         private void panelBajoTechoCE_Paint(object sender, PaintEventArgs e)
         {
-            panelAireLibreCE.Visible=false;
-            panelBajoTechoCE.Visible=true;
+            
         }
 
         private void panelAireLibreCE_Paint(object sender, PaintEventArgs e)
@@ -128,16 +133,16 @@ namespace MagnoliaEventos
 
         private void btnSig_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(eventoInfo.Locacion))
+            if (string.IsNullOrEmpty(_eventoInfo.Locacion))
             {
                 MessageBox.Show("Por favor, seleccione una locación antes de continuar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
                 
-                Factura facturaForm = new Factura(eventoInfo);
-                facturaForm.Show();
-                this.Close();
+                CrearEvento crearEvento = new CrearEvento(_eventoInfo);
+                crearEvento.Show();
+                Close();
             }
         }
 
@@ -145,7 +150,7 @@ namespace MagnoliaEventos
         {
             LandingPage form8 = new LandingPage();
             form8.Show();
-            this.Close();
+            Close();
         }
 
         private void btnCrearC2_Click(object sender, EventArgs e)

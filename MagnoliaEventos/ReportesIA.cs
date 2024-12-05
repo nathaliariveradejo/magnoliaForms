@@ -26,9 +26,9 @@ namespace MagnoliaEventos
 
         private void btnCrearRIA_Click(object sender, EventArgs e)
         {
-            CrearEvento crearEvento = new CrearEvento();
-            this.Hide();
-            crearEvento.Show();
+            Locaciones locaciones = new Locaciones();
+            Hide();
+            locaciones.Show();
         }
 
         private void btnEditarRIA_Click(object sender, EventArgs e)

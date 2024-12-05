@@ -87,7 +87,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\Evento.cs" />
+    <Compile Include="API\Locacion.cs" />
     <Compile Include="API\LogInRequest.cs" />
+    <Compile Include="API\PostEventoRequest.cs" />
+    <Compile Include="API\PostFacturaRequest.cs" />
     <Compile Include="CrearEvento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,25 +241,7 @@
     <None Include="Resources\Crear_Evento.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\8.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Factura.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\4.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Crear_Evento1.png" />
