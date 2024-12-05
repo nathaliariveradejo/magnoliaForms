@@ -52,10 +52,10 @@
             this.btnReportesV.BackColor = System.Drawing.Color.Transparent;
             this.btnReportesV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportesV.ForeColor = System.Drawing.Color.Transparent;
-            this.btnReportesV.Location = new System.Drawing.Point(1179, 36);
-            this.btnReportesV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReportesV.Location = new System.Drawing.Point(1326, 45);
+            this.btnReportesV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReportesV.Name = "btnReportesV";
-            this.btnReportesV.Size = new System.Drawing.Size(119, 28);
+            this.btnReportesV.Size = new System.Drawing.Size(134, 35);
             this.btnReportesV.TabIndex = 30;
             this.btnReportesV.Text = "i";
             this.btnReportesV.UseVisualStyleBackColor = false;
@@ -65,10 +65,10 @@
             this.btnVerV.BackColor = System.Drawing.Color.Transparent;
             this.btnVerV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerV.ForeColor = System.Drawing.Color.Transparent;
-            this.btnVerV.Location = new System.Drawing.Point(1088, 36);
-            this.btnVerV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVerV.Location = new System.Drawing.Point(1224, 45);
+            this.btnVerV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnVerV.Name = "btnVerV";
-            this.btnVerV.Size = new System.Drawing.Size(71, 28);
+            this.btnVerV.Size = new System.Drawing.Size(80, 35);
             this.btnVerV.TabIndex = 29;
             this.btnVerV.Text = "i";
             this.btnVerV.UseVisualStyleBackColor = false;
@@ -78,10 +78,10 @@
             this.btnEditarV.BackColor = System.Drawing.Color.Transparent;
             this.btnEditarV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditarV.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEditarV.Location = new System.Drawing.Point(980, 36);
-            this.btnEditarV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditarV.Location = new System.Drawing.Point(1102, 45);
+            this.btnEditarV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEditarV.Name = "btnEditarV";
-            this.btnEditarV.Size = new System.Drawing.Size(86, 28);
+            this.btnEditarV.Size = new System.Drawing.Size(97, 35);
             this.btnEditarV.TabIndex = 28;
             this.btnEditarV.Text = "i";
             this.btnEditarV.UseVisualStyleBackColor = false;
@@ -91,10 +91,10 @@
             this.btnCrearV.BackColor = System.Drawing.Color.Transparent;
             this.btnCrearV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearV.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCrearV.Location = new System.Drawing.Point(874, 36);
-            this.btnCrearV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCrearV.Location = new System.Drawing.Point(983, 45);
+            this.btnCrearV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCrearV.Name = "btnCrearV";
-            this.btnCrearV.Size = new System.Drawing.Size(82, 28);
+            this.btnCrearV.Size = new System.Drawing.Size(92, 35);
             this.btnCrearV.TabIndex = 27;
             this.btnCrearV.Text = "i";
             this.btnCrearV.UseVisualStyleBackColor = false;
@@ -105,10 +105,10 @@
             this.btnInicioV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnInicioV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicioV.ForeColor = System.Drawing.Color.Transparent;
-            this.btnInicioV.Location = new System.Drawing.Point(766, 36);
-            this.btnInicioV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnInicioV.Location = new System.Drawing.Point(862, 45);
+            this.btnInicioV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInicioV.Name = "btnInicioV";
-            this.btnInicioV.Size = new System.Drawing.Size(76, 28);
+            this.btnInicioV.Size = new System.Drawing.Size(86, 35);
             this.btnInicioV.TabIndex = 26;
             this.btnInicioV.Text = "i";
             this.btnInicioV.UseVisualStyleBackColor = false;
@@ -116,9 +116,10 @@
             // txtBuscar
             // 
             this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscar.Location = new System.Drawing.Point(41, 272);
+            this.txtBuscar.Location = new System.Drawing.Point(46, 340);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(220, 30);
+            this.txtBuscar.Size = new System.Drawing.Size(247, 35);
             this.txtBuscar.TabIndex = 31;
             // 
             // btnEditar
@@ -126,9 +127,10 @@
             this.btnEditar.BackColor = System.Drawing.Color.Transparent;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEditar.Location = new System.Drawing.Point(777, 636);
+            this.btnEditar.Location = new System.Drawing.Point(874, 795);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(225, 36);
+            this.btnEditar.Size = new System.Drawing.Size(253, 45);
             this.btnEditar.TabIndex = 32;
             this.btnEditar.Text = "i";
             this.btnEditar.UseVisualStyleBackColor = false;
@@ -138,9 +140,10 @@
             this.btnEliminar.BackColor = System.Drawing.Color.Transparent;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEliminar.Location = new System.Drawing.Point(1043, 636);
+            this.btnEliminar.Location = new System.Drawing.Point(1173, 795);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(225, 36);
+            this.btnEliminar.Size = new System.Drawing.Size(253, 45);
             this.btnEliminar.TabIndex = 33;
             this.btnEliminar.Text = "i";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -150,41 +153,44 @@
             this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnBuscar.Location = new System.Drawing.Point(76, 324);
+            this.btnBuscar.Location = new System.Drawing.Point(86, 405);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(148, 36);
+            this.btnBuscar.Size = new System.Drawing.Size(166, 45);
             this.btnBuscar.TabIndex = 34;
-            this.btnBuscar.Text = "i";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // DGVTablaEvento
             // 
             this.DGVTablaEvento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVTablaEvento.Location = new System.Drawing.Point(351, 219);
+            this.DGVTablaEvento.Location = new System.Drawing.Point(395, 274);
+            this.DGVTablaEvento.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DGVTablaEvento.Name = "DGVTablaEvento";
             this.DGVTablaEvento.RowHeadersWidth = 51;
             this.DGVTablaEvento.RowTemplate.Height = 24;
-            this.DGVTablaEvento.Size = new System.Drawing.Size(917, 103);
+            this.DGVTablaEvento.Size = new System.Drawing.Size(1032, 129);
             this.DGVTablaEvento.TabIndex = 35;
             // 
             // DGVTablaLocacion
             // 
             this.DGVTablaLocacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVTablaLocacion.Location = new System.Drawing.Point(351, 328);
+            this.DGVTablaLocacion.Location = new System.Drawing.Point(395, 410);
+            this.DGVTablaLocacion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DGVTablaLocacion.Name = "DGVTablaLocacion";
             this.DGVTablaLocacion.RowHeadersWidth = 51;
             this.DGVTablaLocacion.RowTemplate.Height = 24;
-            this.DGVTablaLocacion.Size = new System.Drawing.Size(917, 103);
+            this.DGVTablaLocacion.Size = new System.Drawing.Size(1032, 129);
             this.DGVTablaLocacion.TabIndex = 36;
             // 
             // DGVTablaServicio
             // 
             this.DGVTablaServicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVTablaServicio.Location = new System.Drawing.Point(351, 437);
+            this.DGVTablaServicio.Location = new System.Drawing.Point(395, 546);
+            this.DGVTablaServicio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DGVTablaServicio.Name = "DGVTablaServicio";
             this.DGVTablaServicio.RowHeadersWidth = 51;
             this.DGVTablaServicio.RowTemplate.Height = 24;
-            this.DGVTablaServicio.Size = new System.Drawing.Size(917, 103);
+            this.DGVTablaServicio.Size = new System.Drawing.Size(1032, 129);
             this.DGVTablaServicio.TabIndex = 37;
             // 
             // btnVerTodo
@@ -192,20 +198,21 @@
             this.btnVerTodo.BackColor = System.Drawing.Color.Transparent;
             this.btnVerTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerTodo.ForeColor = System.Drawing.Color.Transparent;
-            this.btnVerTodo.Location = new System.Drawing.Point(76, 375);
+            this.btnVerTodo.Location = new System.Drawing.Point(86, 469);
+            this.btnVerTodo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnVerTodo.Name = "btnVerTodo";
-            this.btnVerTodo.Size = new System.Drawing.Size(148, 36);
+            this.btnVerTodo.Size = new System.Drawing.Size(166, 45);
             this.btnVerTodo.TabIndex = 38;
             this.btnVerTodo.Text = "i";
             this.btnVerTodo.UseVisualStyleBackColor = false;
             // 
             // Visualizar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1348, 721);
+            this.ClientSize = new System.Drawing.Size(1516, 901);
             this.Controls.Add(this.btnVerTodo);
             this.Controls.Add(this.DGVTablaServicio);
             this.Controls.Add(this.DGVTablaLocacion);
@@ -219,6 +226,7 @@
             this.Controls.Add(this.btnEditarV);
             this.Controls.Add(this.btnCrearV);
             this.Controls.Add(this.btnInicioV);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Visualizar";
             this.Text = "Visualizar";
             ((System.ComponentModel.ISupportInitialize)(this.DGVTablaEvento)).EndInit();

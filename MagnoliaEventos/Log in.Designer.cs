@@ -44,6 +44,7 @@
             this.btnSesión.Size = new System.Drawing.Size(356, 135);
             this.btnSesión.TabIndex = 0;
             this.btnSesión.UseVisualStyleBackColor = true;
+            this.btnSesión.Click += new System.EventHandler(this.btnSesión_Click_1);
             // 
             // Form1
             // 

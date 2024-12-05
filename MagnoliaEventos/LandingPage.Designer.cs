@@ -46,6 +46,7 @@
             this.btnReportesI.Size = new System.Drawing.Size(148, 35);
             this.btnReportesI.TabIndex = 30;
             this.btnReportesI.UseVisualStyleBackColor = false;
+            this.btnReportesI.Click += new System.EventHandler(this.btnReportesI_Click);
             // 
             // btnVerI
             // 
@@ -58,6 +59,7 @@
             this.btnVerI.Size = new System.Drawing.Size(80, 35);
             this.btnVerI.TabIndex = 29;
             this.btnVerI.UseVisualStyleBackColor = false;
+            this.btnVerI.Click += new System.EventHandler(this.btnVerI_Click);
             // 
             // btnEditarI
             // 
@@ -70,6 +72,7 @@
             this.btnEditarI.Size = new System.Drawing.Size(97, 35);
             this.btnEditarI.TabIndex = 28;
             this.btnEditarI.UseVisualStyleBackColor = false;
+            this.btnEditarI.Click += new System.EventHandler(this.btnEditarI_Click);
             // 
             // btnCrearI
             // 
@@ -82,6 +85,7 @@
             this.btnCrearI.Size = new System.Drawing.Size(92, 35);
             this.btnCrearI.TabIndex = 27;
             this.btnCrearI.UseVisualStyleBackColor = false;
+            this.btnCrearI.Click += new System.EventHandler(this.btnCrearI_Click);
             // 
             // btnInicioI
             // 
@@ -95,6 +99,7 @@
             this.btnInicioI.Size = new System.Drawing.Size(86, 35);
             this.btnInicioI.TabIndex = 26;
             this.btnInicioI.UseVisualStyleBackColor = false;
+            this.btnInicioI.Click += new System.EventHandler(this.btnInicioI_Click);
             // 
             // LandingPage
             // 

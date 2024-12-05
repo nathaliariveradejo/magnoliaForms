@@ -40,7 +40,6 @@
             this.chkMúsica = new System.Windows.Forms.CheckBox();
             this.chkMurga = new System.Windows.Forms.CheckBox();
             this.chkMariachi = new System.Windows.Forms.CheckBox();
-            this.chkBano = new System.Windows.Forms.CheckBox();
             this.txtCantPersCE = new System.Windows.Forms.NumericUpDown();
             this.btnEventoSIg = new System.Windows.Forms.Button();
             this.btnReporteE = new System.Windows.Forms.Button();
@@ -51,6 +50,8 @@
             this.txtDetallesCE = new System.Windows.Forms.TextBox();
             this.btnSigCE1 = new System.Windows.Forms.Button();
             this.cbEventType = new System.Windows.Forms.ComboBox();
+            this.lblCosto = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtCantPersCE)).BeginInit();
             this.SuspendLayout();
             // 
@@ -198,18 +199,6 @@
             this.chkMariachi.TabIndex = 7;
             this.chkMariachi.UseVisualStyleBackColor = false;
             // 
-            // chkBano
-            // 
-            this.chkBano.AutoSize = true;
-            this.chkBano.BackColor = System.Drawing.Color.Transparent;
-            this.chkBano.ForeColor = System.Drawing.Color.Transparent;
-            this.chkBano.Location = new System.Drawing.Point(974, 763);
-            this.chkBano.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.chkBano.Name = "chkBano";
-            this.chkBano.Size = new System.Drawing.Size(22, 21);
-            this.chkBano.TabIndex = 12;
-            this.chkBano.UseVisualStyleBackColor = false;
-            // 
             // txtCantPersCE
             // 
             this.txtCantPersCE.Location = new System.Drawing.Point(406, 610);
@@ -329,6 +318,28 @@
             this.cbEventType.Size = new System.Drawing.Size(395, 28);
             this.cbEventType.TabIndex = 29;
             // 
+            // lblCosto
+            // 
+            this.lblCosto.AutoSize = true;
+            this.lblCosto.BackColor = System.Drawing.Color.Transparent;
+            this.lblCosto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCosto.Location = new System.Drawing.Point(1018, 808);
+            this.lblCosto.Name = "lblCosto";
+            this.lblCosto.Size = new System.Drawing.Size(71, 29);
+            this.lblCosto.TabIndex = 30;
+            this.lblCosto.Text = "$0.00";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(880, 808);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 29);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Precio:";
+            // 
             // CrearEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -336,6 +347,8 @@
             this.BackgroundImage = global::MagnoliaEventos.Properties.Resources.Crear_Evento;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1516, 901);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCosto);
             this.Controls.Add(this.cbEventType);
             this.Controls.Add(this.btnSigCE1);
             this.Controls.Add(this.txtDetallesCE);
@@ -346,7 +359,6 @@
             this.Controls.Add(this.btnInicioC);
             this.Controls.Add(this.btnEventoSIg);
             this.Controls.Add(this.txtCantPersCE);
-            this.Controls.Add(this.chkBano);
             this.Controls.Add(this.chkPayaso);
             this.Controls.Add(this.chkAnimador);
             this.Controls.Add(this.chkMúsica);
@@ -382,7 +394,6 @@
         private System.Windows.Forms.CheckBox chkMúsica;
         private System.Windows.Forms.CheckBox chkMurga;
         private System.Windows.Forms.CheckBox chkMariachi;
-        private System.Windows.Forms.CheckBox chkBano;
         private System.Windows.Forms.NumericUpDown txtCantPersCE;
         private System.Windows.Forms.Button btnEventoSIg;
         private System.Windows.Forms.Button btnReporteE;
@@ -393,5 +404,7 @@
         private System.Windows.Forms.TextBox txtDetallesCE;
         private System.Windows.Forms.Button btnSigCE1;
         private System.Windows.Forms.ComboBox cbEventType;
+        private System.Windows.Forms.Label lblCosto;
+        private System.Windows.Forms.Label label1;
     }
 }

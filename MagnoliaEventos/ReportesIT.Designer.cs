@@ -28,32 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnReportesRIT = new System.Windows.Forms.Button();
+            this.btnServAd = new System.Windows.Forms.Button();
             this.btnVerRIT = new System.Windows.Forms.Button();
             this.btnEditarRIT = new System.Windows.Forms.Button();
             this.btnCrearRIT = new System.Windows.Forms.Button();
             this.btnInicioRIT = new System.Windows.Forms.Button();
             this.btnExportarIT = new System.Windows.Forms.Button();
-            this.btnFacturaIT = new System.Windows.Forms.Button();
-            this.btnAnualIT = new System.Windows.Forms.Button();
-            this.btnTrimestralIT = new System.Windows.Forms.Button();
-            this.btnMensualIT = new System.Windows.Forms.Button();
+            this.btnBitacora = new System.Windows.Forms.Button();
+            this.btnProxEvent = new System.Windows.Forms.Button();
+            this.btnMensual = new System.Windows.Forms.Button();
+            this.btnTopLoca = new System.Windows.Forms.Button();
             this.btnProxEventosIT = new System.Windows.Forms.Button();
             this.DGVProxEventosIT = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DGVProxEventosIT)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnReportesRIT
+            // btnServAd
             // 
-            this.btnReportesRIT.BackColor = System.Drawing.Color.Transparent;
-            this.btnReportesRIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReportesRIT.ForeColor = System.Drawing.Color.Transparent;
-            this.btnReportesRIT.Location = new System.Drawing.Point(1314, 48);
-            this.btnReportesRIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnReportesRIT.Name = "btnReportesRIT";
-            this.btnReportesRIT.Size = new System.Drawing.Size(133, 35);
-            this.btnReportesRIT.TabIndex = 24;
-            this.btnReportesRIT.UseVisualStyleBackColor = false;
+            this.btnServAd.BackColor = System.Drawing.Color.Transparent;
+            this.btnServAd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnServAd.ForeColor = System.Drawing.Color.Transparent;
+            this.btnServAd.Location = new System.Drawing.Point(1314, 48);
+            this.btnServAd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnServAd.Name = "btnServAd";
+            this.btnServAd.Size = new System.Drawing.Size(133, 35);
+            this.btnServAd.TabIndex = 24;
+            this.btnServAd.UseVisualStyleBackColor = false;
+            this.btnServAd.Click += new System.EventHandler(this.btnReportesRIT_Click);
             // 
             // btnVerRIT
             // 
@@ -66,6 +67,7 @@
             this.btnVerRIT.Size = new System.Drawing.Size(58, 35);
             this.btnVerRIT.TabIndex = 23;
             this.btnVerRIT.UseVisualStyleBackColor = false;
+            this.btnVerRIT.Click += new System.EventHandler(this.btnVerRIT_Click);
             // 
             // btnEditarRIT
             // 
@@ -78,6 +80,7 @@
             this.btnEditarRIT.Size = new System.Drawing.Size(92, 35);
             this.btnEditarRIT.TabIndex = 22;
             this.btnEditarRIT.UseVisualStyleBackColor = false;
+            this.btnEditarRIT.Click += new System.EventHandler(this.btnEditarRIT_Click);
             // 
             // btnCrearRIT
             // 
@@ -90,6 +93,7 @@
             this.btnCrearRIT.Size = new System.Drawing.Size(80, 35);
             this.btnCrearRIT.TabIndex = 21;
             this.btnCrearRIT.UseVisualStyleBackColor = false;
+            this.btnCrearRIT.Click += new System.EventHandler(this.btnCrearRIT_Click);
             // 
             // btnInicioRIT
             // 
@@ -102,6 +106,7 @@
             this.btnInicioRIT.Size = new System.Drawing.Size(80, 35);
             this.btnInicioRIT.TabIndex = 20;
             this.btnInicioRIT.UseVisualStyleBackColor = false;
+            this.btnInicioRIT.Click += new System.EventHandler(this.btnInicioRIT_Click);
             // 
             // btnExportarIT
             // 
@@ -116,53 +121,54 @@
             this.btnExportarIT.Text = "EXPORTAR";
             this.btnExportarIT.UseVisualStyleBackColor = false;
             // 
-            // btnFacturaIT
+            // btnBitacora
             // 
-            this.btnFacturaIT.BackColor = System.Drawing.Color.Transparent;
-            this.btnFacturaIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFacturaIT.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFacturaIT.Location = new System.Drawing.Point(96, 590);
-            this.btnFacturaIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnFacturaIT.Name = "btnFacturaIT";
-            this.btnFacturaIT.Size = new System.Drawing.Size(129, 51);
-            this.btnFacturaIT.TabIndex = 18;
-            this.btnFacturaIT.UseVisualStyleBackColor = false;
+            this.btnBitacora.BackColor = System.Drawing.Color.Transparent;
+            this.btnBitacora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBitacora.ForeColor = System.Drawing.Color.Transparent;
+            this.btnBitacora.Location = new System.Drawing.Point(96, 590);
+            this.btnBitacora.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBitacora.Name = "btnBitacora";
+            this.btnBitacora.Size = new System.Drawing.Size(129, 51);
+            this.btnBitacora.TabIndex = 18;
+            this.btnBitacora.UseVisualStyleBackColor = false;
+            this.btnBitacora.Click += new System.EventHandler(this.btnBitacora_Click);
             // 
-            // btnAnualIT
+            // btnProxEvent
             // 
-            this.btnAnualIT.BackColor = System.Drawing.Color.Transparent;
-            this.btnAnualIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnualIT.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAnualIT.Location = new System.Drawing.Point(96, 509);
-            this.btnAnualIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnAnualIT.Name = "btnAnualIT";
-            this.btnAnualIT.Size = new System.Drawing.Size(218, 55);
-            this.btnAnualIT.TabIndex = 17;
-            this.btnAnualIT.UseVisualStyleBackColor = false;
+            this.btnProxEvent.BackColor = System.Drawing.Color.Transparent;
+            this.btnProxEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProxEvent.ForeColor = System.Drawing.Color.Transparent;
+            this.btnProxEvent.Location = new System.Drawing.Point(96, 509);
+            this.btnProxEvent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnProxEvent.Name = "btnProxEvent";
+            this.btnProxEvent.Size = new System.Drawing.Size(218, 55);
+            this.btnProxEvent.TabIndex = 17;
+            this.btnProxEvent.UseVisualStyleBackColor = false;
             // 
-            // btnTrimestralIT
+            // btnMensual
             // 
-            this.btnTrimestralIT.BackColor = System.Drawing.Color.Transparent;
-            this.btnTrimestralIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrimestralIT.ForeColor = System.Drawing.Color.Transparent;
-            this.btnTrimestralIT.Location = new System.Drawing.Point(80, 437);
-            this.btnTrimestralIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnTrimestralIT.Name = "btnTrimestralIT";
-            this.btnTrimestralIT.Size = new System.Drawing.Size(269, 50);
-            this.btnTrimestralIT.TabIndex = 16;
-            this.btnTrimestralIT.UseVisualStyleBackColor = false;
+            this.btnMensual.BackColor = System.Drawing.Color.Transparent;
+            this.btnMensual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMensual.ForeColor = System.Drawing.Color.Transparent;
+            this.btnMensual.Location = new System.Drawing.Point(80, 437);
+            this.btnMensual.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnMensual.Name = "btnMensual";
+            this.btnMensual.Size = new System.Drawing.Size(269, 50);
+            this.btnMensual.TabIndex = 16;
+            this.btnMensual.UseVisualStyleBackColor = false;
             // 
-            // btnMensualIT
+            // btnTopLoca
             // 
-            this.btnMensualIT.BackColor = System.Drawing.Color.Transparent;
-            this.btnMensualIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMensualIT.ForeColor = System.Drawing.Color.Transparent;
-            this.btnMensualIT.Location = new System.Drawing.Point(80, 362);
-            this.btnMensualIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnMensualIT.Name = "btnMensualIT";
-            this.btnMensualIT.Size = new System.Drawing.Size(244, 50);
-            this.btnMensualIT.TabIndex = 15;
-            this.btnMensualIT.UseVisualStyleBackColor = false;
+            this.btnTopLoca.BackColor = System.Drawing.Color.Transparent;
+            this.btnTopLoca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTopLoca.ForeColor = System.Drawing.Color.Transparent;
+            this.btnTopLoca.Location = new System.Drawing.Point(80, 362);
+            this.btnTopLoca.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnTopLoca.Name = "btnTopLoca";
+            this.btnTopLoca.Size = new System.Drawing.Size(244, 50);
+            this.btnTopLoca.TabIndex = 15;
+            this.btnTopLoca.UseVisualStyleBackColor = false;
             // 
             // btnProxEventosIT
             // 
@@ -198,16 +204,16 @@
             this.BackgroundImage = global::MagnoliaEventos.Properties.Resources._4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1516, 901);
-            this.Controls.Add(this.btnReportesRIT);
+            this.Controls.Add(this.btnServAd);
             this.Controls.Add(this.btnVerRIT);
             this.Controls.Add(this.btnEditarRIT);
             this.Controls.Add(this.btnCrearRIT);
             this.Controls.Add(this.btnInicioRIT);
             this.Controls.Add(this.btnExportarIT);
-            this.Controls.Add(this.btnFacturaIT);
-            this.Controls.Add(this.btnAnualIT);
-            this.Controls.Add(this.btnTrimestralIT);
-            this.Controls.Add(this.btnMensualIT);
+            this.Controls.Add(this.btnBitacora);
+            this.Controls.Add(this.btnProxEvent);
+            this.Controls.Add(this.btnMensual);
+            this.Controls.Add(this.btnTopLoca);
             this.Controls.Add(this.btnProxEventosIT);
             this.Controls.Add(this.DGVProxEventosIT);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -220,16 +226,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnReportesRIT;
+        private System.Windows.Forms.Button btnServAd;
         private System.Windows.Forms.Button btnVerRIT;
         private System.Windows.Forms.Button btnEditarRIT;
         private System.Windows.Forms.Button btnCrearRIT;
         private System.Windows.Forms.Button btnInicioRIT;
         private System.Windows.Forms.Button btnExportarIT;
-        private System.Windows.Forms.Button btnFacturaIT;
-        private System.Windows.Forms.Button btnAnualIT;
-        private System.Windows.Forms.Button btnTrimestralIT;
-        private System.Windows.Forms.Button btnMensualIT;
+        private System.Windows.Forms.Button btnBitacora;
+        private System.Windows.Forms.Button btnProxEvent;
+        private System.Windows.Forms.Button btnMensual;
+        private System.Windows.Forms.Button btnTopLoca;
         private System.Windows.Forms.Button btnProxEventosIT;
         private System.Windows.Forms.DataGridView DGVProxEventosIT;
     }

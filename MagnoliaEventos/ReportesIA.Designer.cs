@@ -34,11 +34,11 @@
             this.btnCrearRIA = new System.Windows.Forms.Button();
             this.btnInicioRIA = new System.Windows.Forms.Button();
             this.btnExportarIA = new System.Windows.Forms.Button();
-            this.btnFacturaIA = new System.Windows.Forms.Button();
-            this.btnAnualIA = new System.Windows.Forms.Button();
-            this.btnTrimestralIA = new System.Windows.Forms.Button();
-            this.btnMensualIA = new System.Windows.Forms.Button();
-            this.btnProxEventosIA = new System.Windows.Forms.Button();
+            this.btnBitacora = new System.Windows.Forms.Button();
+            this.btnProxEvent = new System.Windows.Forms.Button();
+            this.btnMensual = new System.Windows.Forms.Button();
+            this.btnTopLoca = new System.Windows.Forms.Button();
+            this.btnServAd = new System.Windows.Forms.Button();
             this.DGVProxEventosIA = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DGVProxEventosIA)).BeginInit();
             this.SuspendLayout();
@@ -48,12 +48,13 @@
             this.btnReportesRIA.BackColor = System.Drawing.Color.Transparent;
             this.btnReportesRIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportesRIA.ForeColor = System.Drawing.Color.Transparent;
-            this.btnReportesRIA.Location = new System.Drawing.Point(1322, 46);
+            this.btnReportesRIA.Location = new System.Drawing.Point(1311, 46);
             this.btnReportesRIA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReportesRIA.Name = "btnReportesRIA";
-            this.btnReportesRIA.Size = new System.Drawing.Size(126, 35);
+            this.btnReportesRIA.Size = new System.Drawing.Size(137, 35);
             this.btnReportesRIA.TabIndex = 24;
             this.btnReportesRIA.UseVisualStyleBackColor = false;
+            this.btnReportesRIA.Click += new System.EventHandler(this.btnReportesRIA_Click);
             // 
             // btnVerRIA
             // 
@@ -66,6 +67,7 @@
             this.btnVerRIA.Size = new System.Drawing.Size(58, 35);
             this.btnVerRIA.TabIndex = 23;
             this.btnVerRIA.UseVisualStyleBackColor = false;
+            this.btnVerRIA.Click += new System.EventHandler(this.btnVerRIA_Click);
             // 
             // btnEditarRIA
             // 
@@ -78,6 +80,7 @@
             this.btnEditarRIA.Size = new System.Drawing.Size(92, 35);
             this.btnEditarRIA.TabIndex = 22;
             this.btnEditarRIA.UseVisualStyleBackColor = false;
+            this.btnEditarRIA.Click += new System.EventHandler(this.btnEditarRIA_Click);
             // 
             // btnCrearRIA
             // 
@@ -90,6 +93,7 @@
             this.btnCrearRIA.Size = new System.Drawing.Size(80, 35);
             this.btnCrearRIA.TabIndex = 21;
             this.btnCrearRIA.UseVisualStyleBackColor = false;
+            this.btnCrearRIA.Click += new System.EventHandler(this.btnCrearRIA_Click);
             // 
             // btnInicioRIA
             // 
@@ -102,6 +106,7 @@
             this.btnInicioRIA.Size = new System.Drawing.Size(80, 35);
             this.btnInicioRIA.TabIndex = 20;
             this.btnInicioRIA.UseVisualStyleBackColor = false;
+            this.btnInicioRIA.Click += new System.EventHandler(this.btnInicioRIA_Click);
             // 
             // btnExportarIA
             // 
@@ -116,65 +121,65 @@
             this.btnExportarIA.Text = "EXPORTAR";
             this.btnExportarIA.UseVisualStyleBackColor = false;
             // 
-            // btnFacturaIA
+            // btnBitacora
             // 
-            this.btnFacturaIA.BackColor = System.Drawing.Color.Transparent;
-            this.btnFacturaIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFacturaIA.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFacturaIA.Location = new System.Drawing.Point(97, 592);
-            this.btnFacturaIA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnFacturaIA.Name = "btnFacturaIA";
-            this.btnFacturaIA.Size = new System.Drawing.Size(129, 51);
-            this.btnFacturaIA.TabIndex = 18;
-            this.btnFacturaIA.UseVisualStyleBackColor = false;
+            this.btnBitacora.BackColor = System.Drawing.Color.Transparent;
+            this.btnBitacora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBitacora.ForeColor = System.Drawing.Color.Transparent;
+            this.btnBitacora.Location = new System.Drawing.Point(97, 592);
+            this.btnBitacora.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBitacora.Name = "btnBitacora";
+            this.btnBitacora.Size = new System.Drawing.Size(129, 51);
+            this.btnBitacora.TabIndex = 18;
+            this.btnBitacora.UseVisualStyleBackColor = false;
             // 
-            // btnAnualIA
+            // btnProxEvent
             // 
-            this.btnAnualIA.BackColor = System.Drawing.Color.Transparent;
-            this.btnAnualIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnualIA.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAnualIA.Location = new System.Drawing.Point(97, 514);
-            this.btnAnualIA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnAnualIA.Name = "btnAnualIA";
-            this.btnAnualIA.Size = new System.Drawing.Size(218, 55);
-            this.btnAnualIA.TabIndex = 17;
-            this.btnAnualIA.UseVisualStyleBackColor = false;
+            this.btnProxEvent.BackColor = System.Drawing.Color.Transparent;
+            this.btnProxEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProxEvent.ForeColor = System.Drawing.Color.Transparent;
+            this.btnProxEvent.Location = new System.Drawing.Point(97, 514);
+            this.btnProxEvent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnProxEvent.Name = "btnProxEvent";
+            this.btnProxEvent.Size = new System.Drawing.Size(218, 55);
+            this.btnProxEvent.TabIndex = 17;
+            this.btnProxEvent.UseVisualStyleBackColor = false;
             // 
-            // btnTrimestralIA
+            // btnMensual
             // 
-            this.btnTrimestralIA.BackColor = System.Drawing.Color.Transparent;
-            this.btnTrimestralIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrimestralIA.ForeColor = System.Drawing.Color.Transparent;
-            this.btnTrimestralIA.Location = new System.Drawing.Point(72, 439);
-            this.btnTrimestralIA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnTrimestralIA.Name = "btnTrimestralIA";
-            this.btnTrimestralIA.Size = new System.Drawing.Size(269, 50);
-            this.btnTrimestralIA.TabIndex = 16;
-            this.btnTrimestralIA.UseVisualStyleBackColor = false;
+            this.btnMensual.BackColor = System.Drawing.Color.Transparent;
+            this.btnMensual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMensual.ForeColor = System.Drawing.Color.Transparent;
+            this.btnMensual.Location = new System.Drawing.Point(72, 439);
+            this.btnMensual.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnMensual.Name = "btnMensual";
+            this.btnMensual.Size = new System.Drawing.Size(269, 50);
+            this.btnMensual.TabIndex = 16;
+            this.btnMensual.UseVisualStyleBackColor = false;
             // 
-            // btnMensualIA
+            // btnTopLoca
             // 
-            this.btnMensualIA.BackColor = System.Drawing.Color.Transparent;
-            this.btnMensualIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMensualIA.ForeColor = System.Drawing.Color.Transparent;
-            this.btnMensualIA.Location = new System.Drawing.Point(97, 365);
-            this.btnMensualIA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnMensualIA.Name = "btnMensualIA";
-            this.btnMensualIA.Size = new System.Drawing.Size(244, 50);
-            this.btnMensualIA.TabIndex = 15;
-            this.btnMensualIA.UseVisualStyleBackColor = false;
+            this.btnTopLoca.BackColor = System.Drawing.Color.Transparent;
+            this.btnTopLoca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTopLoca.ForeColor = System.Drawing.Color.Transparent;
+            this.btnTopLoca.Location = new System.Drawing.Point(81, 362);
+            this.btnTopLoca.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnTopLoca.Name = "btnTopLoca";
+            this.btnTopLoca.Size = new System.Drawing.Size(244, 50);
+            this.btnTopLoca.TabIndex = 15;
+            this.btnTopLoca.UseVisualStyleBackColor = false;
             // 
-            // btnProxEventosIA
+            // btnServAd
             // 
-            this.btnProxEventosIA.BackColor = System.Drawing.Color.Transparent;
-            this.btnProxEventosIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProxEventosIA.ForeColor = System.Drawing.Color.Transparent;
-            this.btnProxEventosIA.Location = new System.Drawing.Point(97, 280);
-            this.btnProxEventosIA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnProxEventosIA.Name = "btnProxEventosIA";
-            this.btnProxEventosIA.Size = new System.Drawing.Size(228, 62);
-            this.btnProxEventosIA.TabIndex = 14;
-            this.btnProxEventosIA.UseVisualStyleBackColor = false;
+            this.btnServAd.BackColor = System.Drawing.Color.Transparent;
+            this.btnServAd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnServAd.ForeColor = System.Drawing.Color.Transparent;
+            this.btnServAd.Location = new System.Drawing.Point(97, 280);
+            this.btnServAd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnServAd.Name = "btnServAd";
+            this.btnServAd.Size = new System.Drawing.Size(228, 62);
+            this.btnServAd.TabIndex = 14;
+            this.btnServAd.UseVisualStyleBackColor = false;
             // 
             // DGVProxEventosIA
             // 
@@ -204,11 +209,11 @@
             this.Controls.Add(this.btnCrearRIA);
             this.Controls.Add(this.btnInicioRIA);
             this.Controls.Add(this.btnExportarIA);
-            this.Controls.Add(this.btnFacturaIA);
-            this.Controls.Add(this.btnAnualIA);
-            this.Controls.Add(this.btnTrimestralIA);
-            this.Controls.Add(this.btnMensualIA);
-            this.Controls.Add(this.btnProxEventosIA);
+            this.Controls.Add(this.btnBitacora);
+            this.Controls.Add(this.btnProxEvent);
+            this.Controls.Add(this.btnMensual);
+            this.Controls.Add(this.btnTopLoca);
+            this.Controls.Add(this.btnServAd);
             this.Controls.Add(this.DGVProxEventosIA);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ReportesIA";
@@ -225,11 +230,11 @@
         private System.Windows.Forms.Button btnCrearRIA;
         private System.Windows.Forms.Button btnInicioRIA;
         private System.Windows.Forms.Button btnExportarIA;
-        private System.Windows.Forms.Button btnFacturaIA;
-        private System.Windows.Forms.Button btnAnualIA;
-        private System.Windows.Forms.Button btnTrimestralIA;
-        private System.Windows.Forms.Button btnMensualIA;
-        private System.Windows.Forms.Button btnProxEventosIA;
+        private System.Windows.Forms.Button btnBitacora;
+        private System.Windows.Forms.Button btnProxEvent;
+        private System.Windows.Forms.Button btnMensual;
+        private System.Windows.Forms.Button btnTopLoca;
+        private System.Windows.Forms.Button btnServAd;
         private System.Windows.Forms.DataGridView DGVProxEventosIA;
     }
 }

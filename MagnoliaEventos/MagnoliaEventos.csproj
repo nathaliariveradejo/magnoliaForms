@@ -99,6 +99,7 @@
     <Compile Include="Factura.Designer.cs">
       <DependentUpon>Factura.cs</DependentUpon>
     </Compile>
+    <Compile Include="GetUserResponse.cs" />
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +156,7 @@
     <Compile Include="ReportesIT.Designer.cs">
       <DependentUpon>ReportesIT.cs</DependentUpon>
     </Compile>
+    <Compile Include="TipoDeUsuario.cs" />
     <Compile Include="Visualizar.cs">
       <SubType>Form</SubType>
     </Compile>

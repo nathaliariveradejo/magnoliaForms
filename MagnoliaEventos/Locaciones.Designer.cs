@@ -150,6 +150,7 @@
             this.rdbAireLibre.TabIndex = 32;
             this.rdbAireLibre.TabStop = true;
             this.rdbAireLibre.UseVisualStyleBackColor = false;
+            this.rdbAireLibre.CheckedChanged += new System.EventHandler(this.rdbAireLibre_CheckedChanged);
             // 
             // btnSigCE2
             // 
@@ -182,6 +183,8 @@
             this.panelAireLibreCE.Name = "panelAireLibreCE";
             this.panelAireLibreCE.Size = new System.Drawing.Size(297, 311);
             this.panelAireLibreCE.TabIndex = 34;
+            this.panelAireLibreCE.Visible = false;
+            this.panelAireLibreCE.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAireLibreCE_Paint);
             // 
             // rdbTerrazaCE
             // 
@@ -196,6 +199,7 @@
             this.rdbTerrazaCE.TabStop = true;
             this.rdbTerrazaCE.Text = "i";
             this.rdbTerrazaCE.UseVisualStyleBackColor = false;
+            this.rdbTerrazaCE.CheckedChanged += new System.EventHandler(this.rdbTerrazaCE_CheckedChanged);
             // 
             // rdbJardinCE
             // 
@@ -210,6 +214,7 @@
             this.rdbJardinCE.TabStop = true;
             this.rdbJardinCE.Text = "i";
             this.rdbJardinCE.UseVisualStyleBackColor = false;
+            this.rdbJardinCE.CheckedChanged += new System.EventHandler(this.rdbJardinCE_CheckedChanged);
             // 
             // rdbLagoCE
             // 
@@ -224,6 +229,7 @@
             this.rdbLagoCE.TabStop = true;
             this.rdbLagoCE.Text = "i";
             this.rdbLagoCE.UseVisualStyleBackColor = false;
+            this.rdbLagoCE.CheckedChanged += new System.EventHandler(this.rdbLagoCE_CheckedChanged);
             // 
             // rdbBosqueCE
             // 
@@ -238,6 +244,7 @@
             this.rdbBosqueCE.TabStop = true;
             this.rdbBosqueCE.Text = "i";
             this.rdbBosqueCE.UseVisualStyleBackColor = false;
+            this.rdbBosqueCE.CheckedChanged += new System.EventHandler(this.rdbBosqueCE_CheckedChanged);
             // 
             // rdbPlayaCE
             // 
@@ -252,6 +259,7 @@
             this.rdbPlayaCE.TabStop = true;
             this.rdbPlayaCE.Text = "i";
             this.rdbPlayaCE.UseVisualStyleBackColor = false;
+            this.rdbPlayaCE.CheckedChanged += new System.EventHandler(this.rdbPlayaCE_CheckedChanged);
             // 
             // label7
             // 
@@ -330,8 +338,9 @@
             this.panelBajoTechoCE.Location = new System.Drawing.Point(1030, 310);
             this.panelBajoTechoCE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelBajoTechoCE.Name = "panelBajoTechoCE";
-            this.panelBajoTechoCE.Size = new System.Drawing.Size(297, 311);
+            this.panelBajoTechoCE.Size = new System.Drawing.Size(334, 311);
             this.panelBajoTechoCE.TabIndex = 35;
+            this.panelBajoTechoCE.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBajoTechoCE_Paint);
             // 
             // rdbInvernaderoCE
             // 
@@ -346,6 +355,7 @@
             this.rdbInvernaderoCE.TabStop = true;
             this.rdbInvernaderoCE.Text = "i";
             this.rdbInvernaderoCE.UseVisualStyleBackColor = false;
+            this.rdbInvernaderoCE.CheckedChanged += new System.EventHandler(this.rdbInvernaderoCE_CheckedChanged);
             // 
             // rdbCapillaCE
             // 
@@ -360,6 +370,7 @@
             this.rdbCapillaCE.TabStop = true;
             this.rdbCapillaCE.Text = "i";
             this.rdbCapillaCE.UseVisualStyleBackColor = false;
+            this.rdbCapillaCE.CheckedChanged += new System.EventHandler(this.rdbCapillaCE_CheckedChanged);
             // 
             // label12
             // 
@@ -384,6 +395,7 @@
             this.rdbVistaLagoCE.TabStop = true;
             this.rdbVistaLagoCE.Text = "i";
             this.rdbVistaLagoCE.UseVisualStyleBackColor = false;
+            this.rdbVistaLagoCE.CheckedChanged += new System.EventHandler(this.rdbVistaLagoCE_CheckedChanged);
             // 
             // label11
             // 
@@ -391,9 +403,9 @@
             this.label11.Font = new System.Drawing.Font("Perpetua Titling MT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(68, 129);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(208, 19);
+            this.label11.Size = new System.Drawing.Size(246, 19);
             this.label11.TabIndex = 9;
-            this.label11.Text = "salón vista al bosque";
+            this.label11.Text = "salón vista a la montaña";
             // 
             // rdbVistaBosqueCE
             // 
@@ -408,6 +420,7 @@
             this.rdbVistaBosqueCE.TabStop = true;
             this.rdbVistaBosqueCE.Text = "i";
             this.rdbVistaBosqueCE.UseVisualStyleBackColor = false;
+            this.rdbVistaBosqueCE.CheckedChanged += new System.EventHandler(this.rdbVistaBosqueCE_CheckedChanged);
             // 
             // label10
             // 
@@ -432,6 +445,7 @@
             this.rdbVistaMarCE.TabStop = true;
             this.rdbVistaMarCE.Text = "i";
             this.rdbVistaMarCE.UseVisualStyleBackColor = false;
+            this.rdbVistaMarCE.CheckedChanged += new System.EventHandler(this.rdbVistaMarCE_CheckedChanged);
             // 
             // label9
             // 

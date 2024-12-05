@@ -69,6 +69,7 @@
             this.btnNextSesión.Size = new System.Drawing.Size(241, 91);
             this.btnNextSesión.TabIndex = 2;
             this.btnNextSesión.UseVisualStyleBackColor = false;
+            this.btnNextSesión.Click += new System.EventHandler(this.btnNextSesión_Click);
             // 
             // Inicio
             // 

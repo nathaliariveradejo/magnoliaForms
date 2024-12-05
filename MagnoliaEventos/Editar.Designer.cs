@@ -33,7 +33,6 @@
             this.btnEditarE = new System.Windows.Forms.Button();
             this.btnCrearE = new System.Windows.Forms.Button();
             this.btnInicioE = new System.Windows.Forms.Button();
-            this.chkBanoE = new System.Windows.Forms.CheckBox();
             this.E = new System.Windows.Forms.CheckBox();
             this.chkAnimadorE = new System.Windows.Forms.CheckBox();
             this.chkMúsicaE = new System.Windows.Forms.CheckBox();
@@ -146,18 +145,6 @@
             this.btnInicioE.TabIndex = 26;
             this.btnInicioE.Text = "i";
             this.btnInicioE.UseVisualStyleBackColor = false;
-            // 
-            // chkBanoE
-            // 
-            this.chkBanoE.AutoSize = true;
-            this.chkBanoE.BackColor = System.Drawing.Color.Transparent;
-            this.chkBanoE.ForeColor = System.Drawing.Color.Transparent;
-            this.chkBanoE.Location = new System.Drawing.Point(639, 691);
-            this.chkBanoE.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.chkBanoE.Name = "chkBanoE";
-            this.chkBanoE.Size = new System.Drawing.Size(22, 21);
-            this.chkBanoE.TabIndex = 41;
-            this.chkBanoE.UseVisualStyleBackColor = false;
             // 
             // E
             // 
@@ -691,7 +678,6 @@
             this.Controls.Add(this.dtpFechaE);
             this.Controls.Add(this.rdbBajoTechoE);
             this.Controls.Add(this.rdbAireLibreE);
-            this.Controls.Add(this.chkBanoE);
             this.Controls.Add(this.E);
             this.Controls.Add(this.chkAnimadorE);
             this.Controls.Add(this.chkMúsicaE);
@@ -727,7 +713,6 @@
         private System.Windows.Forms.Button btnEditarE;
         private System.Windows.Forms.Button btnCrearE;
         private System.Windows.Forms.Button btnInicioE;
-        private System.Windows.Forms.CheckBox chkBanoE;
         private System.Windows.Forms.CheckBox E;
         private System.Windows.Forms.CheckBox chkAnimadorE;
         private System.Windows.Forms.CheckBox chkMúsicaE;
