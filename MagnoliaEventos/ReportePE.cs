@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
+
 
 namespace MagnoliaEventos
 {
@@ -25,6 +29,11 @@ namespace MagnoliaEventos
 
         private void btnExportarPE_Click(object sender, EventArgs e)
         {
+            Document doc = new Document();
+            PdfWriter.GetInstance(doc, new FileStream("ServAdReporte.pdf",FileMode.Create));
+            doc.Open();
+            doc.Add(new Paragraph("Hola Mundoo!"));
+            doc.Close();
 
         }
 
